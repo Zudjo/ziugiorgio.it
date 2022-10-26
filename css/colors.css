@@ -1,0 +1,33 @@
+/*-p stands for personal*/
+
+
+/*background colors*/
+.bg-main_green-p {
+  background-color: #5C6318;
+}
+
+.bg-secondary_green-p {
+  background-color: #515430;
+}
+
+.bg-black-p {
+  background-color: #070800;
+}
+
+
+/*text colors*/
+.main_green-p {
+  color: #5C6318;
+}
+
+.secondary_green-p {
+  color: #515430;
+}
+
+.lavander-grey {
+  color: #b7b6c1;
+}
+
+.black-p {
+  color: #070800;
+}
