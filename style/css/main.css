@@ -1,0 +1,108 @@
+html {
+  background-color: #101010;
+  color: #f1f7ed;
+}
+
+h1 {
+  color: #7ca982;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none Firefox;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+div.page {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+}
+div.page:first-of-type {
+  height: calc(100vh - 1.44rem);
+}
+div.page img {
+  height: 20rem;
+}
+
+@font-face {
+  font-family: "Geo-Sans-Light";
+  src: url("../fonts/GeosansLight.ttf");
+}
+html {
+  font-family: "Geo-Sans-Light";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 1rem;
+}
+
+nav {
+  top: 0.11rem;
+}
+nav li {
+  padding: 0 0.33rem;
+}
+
+div.page {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav {
+  position: sticky;
+}
+
+nav li {
+  display: inline;
+}
+
+.decorative-line {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - 0.11rem);
+  top: 0;
+}
+.decorative-line .piece-1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-bottom-left-radius: 33vw;
+  border-width: 0.11rem;
+  border-color: #c300ff;
+}
+
+html {
+  font-size: 1rem;
+}
+
+nav li {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */
