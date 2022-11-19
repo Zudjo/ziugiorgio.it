@@ -25,10 +25,10 @@ While ($true) {
   sass $MiddleMan $PathOutput\main.css
 
   $Output = ""
-
-  For ($i=5; $i -gt 0; $i--) {
-    Write-Host "Next compilation in $i seconds..."
-    Start-Sleep 1
-    Clear-Host
-  }
+  #
+  # For ($i=50; $i -gt 0; $i--) {
+  #   Write-Host "Next compilation in $i milliseconds..."
+  #   Start-Sleep -milliseconds 10
+  #   Clear-Host
+  # }
 }

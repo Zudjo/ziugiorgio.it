@@ -1,20 +1,43 @@
-div.page
+.content
   display: flex
   align-items: center
-  justify-content: space-evenly
+  justify-content: flex-start
+  position: relative
+  width: 100%
+  height: 100%
 
 nav
-  position: sticky
+  position: absolute
+
+nav li a
+  padding-bottom: .25rem
 
 nav li
   display: inline
+  position: relative
+
+  &::after
+    content: ""
+    z-index: -1
+    position: absolute
+    filter: opacity(50%)
+    height: 100%
+    width: 10%
+    left: 45%
+    bottom: -.25rem
+    border-color: $white
+    border-width: .01rem
+    border-bottom-style: solid
+
+div.page:nth-child(odd):not(:nth-child(1)) .decorative-line
+  transform: scale(1, -1)
 
 .decorative-line
   box-sizing: border-box
   position: absolute
   width: 100vw
   height: calc(100vh - $small-sp / 3)
-  top: 0
+  z-index: -1
 
   .piece-1
     width: 100%
@@ -24,6 +47,10 @@ nav li
 
     border-bottom-style: solid
     border-left-style: solid
-    border-bottom-left-radius: 33vw
+    border-bottom-left-radius: 34vw
     border-width: calc($small-sp / 3)
     border-color: $purple
+
+    animation-name: line
+    animation-duration: 3s
+    animation-timing-function: ease-out
