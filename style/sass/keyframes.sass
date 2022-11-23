@@ -1,0 +1,38 @@
+// an = animation
+
+@keyframes line-an
+  0%
+    width: 0%
+    height: 0%
+    border-bottom-left-radius: 2vw
+  17%
+    width: 0%
+    height: 100%
+  34%
+    width: 100%
+  50%
+    border-bottom-left-radius: 2vw
+  100%
+    border-bottom-left-radius: $radius
+
+@keyframes header-an
+  0%
+    filter: opacity(0%)
+    margin-left: calc($custom-margin / -3)
+  100%
+    filter: opacity(100%)
+    margin-left: 0
+
+@keyframes nav-an
+  0%
+    filter: opacity(0%)
+  100%
+    filter: opacity(100%)
+
+@keyframes about-an
+  0%
+    filter: opacity(0%)
+    margin-left: calc($custom-margin / -3)
+  100%
+    filter: opacity(100%)
+    margin-left: 0

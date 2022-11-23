@@ -1,45 +1,85 @@
-.content
-  display: flex
-  align-items: center
-  justify-content: flex-start
-  position: relative
-  width: 100%
-  height: 100%
+*
+  margin: 0
+  padding: 0
+  line-height: 4rem
+
+html
+  font-size: calc(1vh + 1vw)
+  background-color: $black
+  color: $white
+
+div.page
+  width: 100vw
+  height: 100vh
+  max-width: 100%
+
+  & img
+    height: 20rem
+
+  & header
+    animation-name: header-an
+    animation-duration: 3s
+    animation-timing-function: ease
+    margin-top: 2rem
+    margin-bottom: 2rem
+    margin-right: $custom-margin
+
+  &:nth-child(odd):not(:nth-child(1)) .decorations
+    transform: scale(1, -1)
 
 nav
   position: absolute
+  z-index: 1
+  animation-name: nav-an
+  animation-duration: 3s
+  margin-left: $custom-margin
 
-nav li a
-  padding-bottom: .25rem
+  & li
+    display: inline
+    position: relative
+    font-size: 1.25rem
+    margin-right: $large-sp
 
-nav li
-  display: inline
+    & a
+      padding-bottom: .25rem
+
+      &::after
+        content: ""
+        z-index: 1
+        position: absolute
+        filter: opacity(50%)
+        height: 100%
+        width: 10%
+        left: 45%
+        bottom: -.25rem
+        border-color: $white
+        border-width: .01rem
+        border-bottom-style: solid
+        transition: width 1s, filter 1s, left 1s
+
+      &:hover::after
+        width: 100%
+        filter: opacity(100%)
+        left: 0%
+
+.content
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  align-content: center
+  justify-content: flex-start
   position: relative
+  height: 100%
+  margin-left: $custom-margin
 
-  &::after
-    content: ""
-    z-index: -1
-    position: absolute
-    filter: opacity(50%)
-    height: 100%
-    width: 10%
-    left: 45%
-    bottom: -.25rem
-    border-color: $white
-    border-width: .01rem
-    border-bottom-style: solid
-
-div.page:nth-child(odd):not(:nth-child(1)) .decorative-line
-  transform: scale(1, -1)
-
-.decorative-line
+.decorations
   box-sizing: border-box
   position: absolute
   width: 100vw
   height: calc(100vh - $small-sp / 3)
   z-index: -1
 
-  .piece-1
+  .line
     width: 100%
     height: 100%
     position: relative
@@ -47,10 +87,31 @@ div.page:nth-child(odd):not(:nth-child(1)) .decorative-line
 
     border-bottom-style: solid
     border-left-style: solid
-    border-bottom-left-radius: 34vw
+    border-bottom-left-radius: $radius
     border-width: calc($small-sp / 3)
     border-color: $purple
 
-    animation-name: line
+    animation-name: line-an
     animation-duration: 3s
     animation-timing-function: ease-out
+
+  .curve
+    width: calc(100% - $custom-margin)
+    height: 100%
+    position: relative
+    box-sizing: border-box
+
+    border-style: solid
+    border-radius: $radius
+    border-width: calc($small-sp / 3)
+    border-color: $black
+    border-right-color: $purple
+
+.about
+  margin-top: 2rem
+  margin-bottom: 2rem
+  margin-right: 1rem
+  width: 17.72rem
+  animation-name: about-an
+  animation-duration: 3s
+  animation-timing-function: ease
