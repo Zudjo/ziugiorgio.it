@@ -15,8 +15,28 @@ html {
   font-family: "Geo-Sans-Light";
   src: url("../fonts/GeosansLight.ttf");
 }
-html {
-  font-family: "Geo-Sans-Light";
+@font-face {
+  font-family: "Gidole-Regular";
+  src: url("../fonts/GidoleRegular.otf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat.ttf");
+}
+* {
+  font-family: "Montserrat";
+}
+
+#language-toggler {
+  background-color: transparent;
+  border-width: 0;
+  color: #f1f7ed;
+  filter: opacity(50%);
+  transition-duration: 1s;
+}
+#language-toggler:hover {
+  cursor: pointer;
+  filter: opacity(100%);
 }
 
 @keyframes line-an {
@@ -42,7 +62,7 @@ html {
 @keyframes header-an {
   0% {
     filter: opacity(0%);
-    margin-left: -5.3333333333vw;
+    margin-left: -16vw;
   }
   100% {
     filter: opacity(100%);
@@ -60,7 +80,7 @@ html {
 @keyframes about-an {
   0% {
     filter: opacity(0%);
-    margin-left: -5.3333333333vw;
+    margin-left: -16vw;
   }
   100% {
     filter: opacity(100%);
@@ -70,11 +90,10 @@ html {
 * {
   margin: 0;
   padding: 0;
-  line-height: 4rem;
 }
 
 html {
-  font-size: calc(1vh + 1vw);
+  font-size: clamp(2px, 1vh + 1vw, 22.5px);
   background-color: #101010;
   color: #f1f7ed;
 }
@@ -86,14 +105,6 @@ div.page {
 }
 div.page img {
   height: 20rem;
-}
-div.page header {
-  animation-name: header-an;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-right: 16vw;
 }
 div.page:nth-child(odd):not(:nth-child(1)) .decorations {
   transform: scale(1, -1);
@@ -138,12 +149,12 @@ nav li a:hover::after {
 .content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: normal;
   align-content: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   position: relative;
   height: 100%;
-  margin-left: 16vw;
+  margin: 0 calc(16vw - 4rem);
 }
 
 .decorations {
@@ -161,7 +172,7 @@ nav li a:hover::after {
   border-bottom-style: solid;
   border-left-style: solid;
   border-bottom-left-radius: 16vw;
-  border-width: 0.11rem;
+  border-width: 0.165rem;
   border-color: #c300ff;
   animation-name: line-an;
   animation-duration: 3s;
@@ -174,19 +185,44 @@ nav li a:hover::after {
   box-sizing: border-box;
   border-style: solid;
   border-radius: 16vw;
-  border-width: 0.11rem;
+  border-width: 0.165rem;
   border-color: #101010;
   border-right-color: #c300ff;
 }
 
-.about {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-right: 1rem;
-  width: 17.72rem;
+header {
+  animation-name: header-an;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  padding: 2rem;
+}
+
+#about {
+  width: 21.97rem;
   animation-name: about-an;
   animation-duration: 3s;
   animation-timing-function: ease;
+  line-height: 1rem;
+  padding: 2rem;
+}
+
+.menu {
+  height: 100%;
+  width: 3rem;
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+* {
+  line-height: 4rem;
+  font-weight: 200;
+}
+
+br {
+  line-height: 1rem;
 }
 
 h1, h2 {
@@ -195,10 +231,12 @@ h1, h2 {
 
 h1 {
   font-size: 4rem;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 2.5rem;
+  font-weight: 400;
 }
 
 h3 {

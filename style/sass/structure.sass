@@ -1,10 +1,9 @@
 *
   margin: 0
   padding: 0
-  line-height: 4rem
 
 html
-  font-size: calc(1vh + 1vw)
+  font-size: clamp(2px, calc(1vh + 1vw), 22.5px)
   background-color: $black
   color: $white
 
@@ -15,14 +14,6 @@ div.page
 
   & img
     height: 20rem
-
-  & header
-    animation-name: header-an
-    animation-duration: 3s
-    animation-timing-function: ease
-    margin-top: 2rem
-    margin-bottom: 2rem
-    margin-right: $custom-margin
 
   &:nth-child(odd):not(:nth-child(1)) .decorations
     transform: scale(1, -1)
@@ -65,12 +56,12 @@ nav
 .content
   display: flex
   flex-wrap: wrap
-  align-items: center
+  align-items: normal
   align-content: center
-  justify-content: flex-start
+  justify-content: space-evenly
   position: relative
   height: 100%
-  margin-left: $custom-margin
+  margin: 0 calc($custom-margin - 4rem)
 
 .decorations
   box-sizing: border-box
@@ -88,7 +79,7 @@ nav
     border-bottom-style: solid
     border-left-style: solid
     border-bottom-left-radius: $radius
-    border-width: calc($small-sp / 3)
+    border-width: calc($small-sp / 2)
     border-color: $purple
 
     animation-name: line-an
@@ -103,15 +94,31 @@ nav
 
     border-style: solid
     border-radius: $radius
-    border-width: calc($small-sp / 3)
+    border-width: calc($small-sp / 2)
     border-color: $black
     border-right-color: $purple
 
-.about
-  margin-top: 2rem
-  margin-bottom: 2rem
-  margin-right: 1rem
-  width: 17.72rem
+
+header
+  animation-name: header-an
+  animation-duration: 3s
+  animation-timing-function: ease
+  padding: 2rem
+
+
+#about
+  width: 21.97rem
   animation-name: about-an
   animation-duration: 3s
   animation-timing-function: ease
+  line-height: 1rem
+  padding: 2rem
+
+.menu
+  height: 100%
+  width: 3rem
+  position: fixed
+  left: 0
+  display: flex
+  flex-direction: column
+  z-index: 1

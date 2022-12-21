@@ -21,12 +21,16 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Javascript -->
-    <script src=".\js\animations.js"></script>
+    <script src=".\js\language-toggler.js" type="module"></script>
 
     <title>Ziu Giorgio</title>
   </head>
 
   <body>
+
+    <div class="menu">
+      <button id="language-toggler">EN</button>
+    </div>
 
     <!-- First page -->
     <div class="page">
@@ -36,30 +40,21 @@
         <div class="line"></div>
       </div>
 
-      <!-- Navigation bar -->
-      <nav>
-        <ul>
-
-          <li><a href="#">Chi sono</a></li>
-          <li><a href="#">Esperienze</a></li>
-          <li><a href="#">Conoscenze</a></li>
-          <li><a href="#">GitHub</a></li>
-
-        </ul>
-      </nav>
-
       <section class="content">
         <header>
           <h1>Ziu Giorgio</h1>
-          <h3>Sviluppatore web</h3>
+          <h3 id="profession">Sviluppatore web</h3>
         </header>
 
-        <div class="about">
+        <div id="about">
           <p>
             Nato nel duemila in Italia, mi piace sviluppare e disegnare siti web.
             La cura per i dettagli ed i design intuitivi sono la mia fissa,
-            la curiosità e la perseveranza i miei valori.<br><br>
-            Quando non programmo, mi diletto in cucina con i primi piatti.
+            la curiosità e la perseveranza i miei valori.
+          </p>
+          <br>
+          <p>
+            Quando non sono sulla scrivania, mi diletto in cucina con i primi piatti.
           </p>
         </div>
 
