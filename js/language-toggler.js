@@ -7,7 +7,6 @@ let toggler;
 let about;
 let profession;
 
-
 window.onload = () => {
 
   toggler = document.getElementById("language-toggler");

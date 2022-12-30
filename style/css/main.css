@@ -59,17 +59,7 @@ html {
     border-bottom-left-radius: 16vw;
   }
 }
-@keyframes header-an {
-  0% {
-    filter: opacity(0%);
-    margin-left: -16vw;
-  }
-  100% {
-    filter: opacity(100%);
-    margin-left: 0;
-  }
-}
-@keyframes nav-an {
+@keyframes menu-an {
   0% {
     filter: opacity(0%);
   }
@@ -77,14 +67,330 @@ html {
     filter: opacity(100%);
   }
 }
-@keyframes about-an {
+@keyframes content-an {
   0% {
     filter: opacity(0%);
-    margin-left: -16vw;
+    right: 8vw;
   }
   100% {
     filter: opacity(100%);
-    margin-left: 0;
+    right: 0;
+  }
+}
+@keyframes shish {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes line-inf-an {
+  0% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 100%, #101010) border-box;
+  }
+  1% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 99%, #101010) border-box;
+  }
+  2% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 98%, #101010) border-box;
+  }
+  3% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 97%, #101010) border-box;
+  }
+  4% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 96%, #101010) border-box;
+  }
+  5% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 95%, #101010) border-box;
+  }
+  6% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 94%, #101010) border-box;
+  }
+  7% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 93%, #101010) border-box;
+  }
+  8% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 92%, #101010) border-box;
+  }
+  9% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 91%, #101010) border-box;
+  }
+  10% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 90%, #101010) border-box;
+  }
+  11% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 89%, #101010) border-box;
+  }
+  12% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 88%, #101010) border-box;
+  }
+  13% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 87%, #101010) border-box;
+  }
+  14% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 86%, #101010) border-box;
+  }
+  15% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 85%, #101010) border-box;
+  }
+  16% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 84%, #101010) border-box;
+  }
+  17% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 83%, #101010) border-box;
+  }
+  18% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 82%, #101010) border-box;
+  }
+  19% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 81%, #101010) border-box;
+  }
+  20% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 80%, #101010) border-box;
+  }
+  21% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 79%, #101010) border-box;
+  }
+  22% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 78%, #101010) border-box;
+  }
+  23% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 77%, #101010) border-box;
+  }
+  24% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 76%, #101010) border-box;
+  }
+  25% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 75%, #101010) border-box;
+  }
+  26% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 74%, #101010) border-box;
+  }
+  27% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 73%, #101010) border-box;
+  }
+  28% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 72%, #101010) border-box;
+  }
+  29% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 71%, #101010) border-box;
+  }
+  30% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 70%, #101010) border-box;
+  }
+  31% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 69%, #101010) border-box;
+  }
+  32% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 68%, #101010) border-box;
+  }
+  33% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 67%, #101010) border-box;
+  }
+  34% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 66%, #101010) border-box;
+  }
+  35% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 65%, #101010) border-box;
+  }
+  36% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 64%, #101010) border-box;
+  }
+  37% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 63%, #101010) border-box;
+  }
+  38% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 62%, #101010) border-box;
+  }
+  39% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 61%, #101010) border-box;
+  }
+  40% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 60%, #101010) border-box;
+  }
+  41% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 59%, #101010) border-box;
+  }
+  42% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 58%, #101010) border-box;
+  }
+  43% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 57%, #101010) border-box;
+  }
+  44% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 56%, #101010) border-box;
+  }
+  45% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 55%, #101010) border-box;
+  }
+  46% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 54%, #101010) border-box;
+  }
+  47% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 53%, #101010) border-box;
+  }
+  48% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 52%, #101010) border-box;
+  }
+  49% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 51%, #101010) border-box;
+  }
+  50% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 50%, #101010) border-box;
+  }
+  51% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 49%, #101010) border-box;
+  }
+  52% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 48%, #101010) border-box;
+  }
+  53% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 47%, #101010) border-box;
+  }
+  54% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 46%, #101010) border-box;
+  }
+  55% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 45%, #101010) border-box;
+  }
+  56% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 44%, #101010) border-box;
+  }
+  57% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 43%, #101010) border-box;
+  }
+  58% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 42%, #101010) border-box;
+  }
+  59% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 41%, #101010) border-box;
+  }
+  60% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 40%, #101010) border-box;
+  }
+  61% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 39%, #101010) border-box;
+  }
+  62% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 38%, #101010) border-box;
+  }
+  63% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 37%, #101010) border-box;
+  }
+  64% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 36%, #101010) border-box;
+  }
+  65% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 35%, #101010) border-box;
+  }
+  66% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 34%, #101010) border-box;
+  }
+  67% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 33%, #101010) border-box;
+  }
+  68% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 32%, #101010) border-box;
+  }
+  69% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 31%, #101010) border-box;
+  }
+  70% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 30%, #101010) border-box;
+  }
+  71% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 29%, #101010) border-box;
+  }
+  72% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 28%, #101010) border-box;
+  }
+  73% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 27%, #101010) border-box;
+  }
+  74% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 26%, #101010) border-box;
+  }
+  75% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 25%, #101010) border-box;
+  }
+  76% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 24%, #101010) border-box;
+  }
+  77% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 23%, #101010) border-box;
+  }
+  78% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 22%, #101010) border-box;
+  }
+  79% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 21%, #101010) border-box;
+  }
+  80% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 20%, #101010) border-box;
+  }
+  81% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 19%, #101010) border-box;
+  }
+  82% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 18%, #101010) border-box;
+  }
+  83% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 17%, #101010) border-box;
+  }
+  84% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 16%, #101010) border-box;
+  }
+  85% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 15%, #101010) border-box;
+  }
+  86% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 14%, #101010) border-box;
+  }
+  87% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 13%, #101010) border-box;
+  }
+  88% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 12%, #101010) border-box;
+  }
+  89% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 11%, #101010) border-box;
+  }
+  90% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 10%, #101010) border-box;
+  }
+  91% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 9%, #101010) border-box;
+  }
+  92% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 8%, #101010) border-box;
+  }
+  93% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 7%, #101010) border-box;
+  }
+  94% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 6%, #101010) border-box;
+  }
+  95% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 5%, #101010) border-box;
+  }
+  96% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 4%, #101010) border-box;
+  }
+  97% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 3%, #101010) border-box;
+  }
+  98% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 2%, #101010) border-box;
+  }
+  99% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 1%, #101010) border-box;
+  }
+  100% {
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 0%, #101010) border-box;
   }
 }
 * {
@@ -93,7 +399,6 @@ html {
 }
 
 html {
-  font-size: clamp(2px, 1vh + 1vw, 22.5px);
   background-color: #101010;
   color: #f1f7ed;
 }
@@ -106,7 +411,7 @@ div.page {
 div.page img {
   height: 20rem;
 }
-div.page:nth-child(odd):not(:nth-child(1)) .decorations {
+div.page:nth-child(4) .decorations {
   transform: scale(1, -1);
 }
 
@@ -154,7 +459,10 @@ nav li a:hover::after {
   justify-content: space-evenly;
   position: relative;
   height: 100%;
-  margin: 0 calc(16vw - 4rem);
+  margin: 0 8vw;
+  animation-name: content-an;
+  animation-duration: 3s;
+  animation-timing-function: ease;
 }
 
 .decorations {
@@ -162,63 +470,74 @@ nav li a:hover::after {
   position: absolute;
   width: 100vw;
   height: calc(100vh - 0.11rem);
-  z-index: -1;
+  z-index: -100;
 }
 .decorations .line {
   width: 100%;
   height: 100%;
   position: relative;
   box-sizing: border-box;
+  z-index: -101;
   border-bottom-style: solid;
   border-left-style: solid;
   border-bottom-left-radius: 16vw;
   border-width: 0.165rem;
   border-color: #c300ff;
-  animation-name: line-an;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
 }
-.decorations .curve {
-  width: calc(100% - 16vw);
-  height: 100%;
+.decorations .line.intro-animation {
+  animation-name: line-an, line-inf-an;
+  animation-duration: 3s, 5s;
+  animation-delay: 0s, 3s;
+  animation-timing-function: ease-out, linear;
+  animation-fill-mode: forwards, none;
+  animation-iteration-count: 1, infinite;
+  animation-direction: normal, alternate;
+  background: linear-gradient(#101010, #101010) padding-box, radial-gradient(#c300ff 100%, #101010) border-box;
+  border: transparent;
+  border-bottom-style: solid;
+  border-left-style: solid;
+}
+.decorations .line.animation {
   position: relative;
-  box-sizing: border-box;
-  border-style: solid;
-  border-radius: 16vw;
-  border-width: 0.165rem;
-  border-color: #101010;
-  border-right-color: #c300ff;
+  border: transparent;
+  background: linear-gradient(#101010, #101010) padding-box, radial-gradient(#c300ff 100%, #101010) border-box;
+  z-index: -100;
+  animation-name: line-inf-an;
+  animation-delay: 3s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 header {
-  animation-name: header-an;
-  animation-duration: 3s;
-  animation-timing-function: ease;
   padding: 2rem;
 }
 
 #about {
   width: 21.97rem;
-  animation-name: about-an;
-  animation-duration: 3s;
-  animation-timing-function: ease;
   line-height: 1rem;
   padding: 2rem;
 }
 
 .menu {
   height: 100%;
-  width: 3rem;
+  width: 8vw;
   position: fixed;
   left: 0;
   display: flex;
   flex-direction: column;
   z-index: 1;
+  filter: opacity(0%);
+  animation-fill-mode: forwards;
+  animation-name: menu-an;
+  animation-delay: 3s;
+  animation-duration: 1s;
 }
 
 * {
-  line-height: 4rem;
+  font-size: clamp(2px, 1vh + 1vw, 17.5px);
   font-weight: 200;
+  line-height: 4rem;
 }
 
 br {

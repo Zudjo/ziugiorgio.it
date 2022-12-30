@@ -3,7 +3,6 @@
   padding: 0
 
 html
-  font-size: clamp(2px, calc(1vh + 1vw), 22.5px)
   background-color: $black
   color: $white
 
@@ -15,7 +14,7 @@ div.page
   & img
     height: 20rem
 
-  &:nth-child(odd):not(:nth-child(1)) .decorations
+  &:nth-child(4) .decorations
     transform: scale(1, -1)
 
 nav
@@ -61,20 +60,25 @@ nav
   justify-content: space-evenly
   position: relative
   height: 100%
-  margin: 0 calc($custom-margin - 4rem)
+  margin: 0 calc($custom-margin / 2)
+  animation-name: content-an
+  animation-duration: 3s
+  animation-timing-function: ease
+
 
 .decorations
   box-sizing: border-box
   position: absolute
   width: 100vw
   height: calc(100vh - $small-sp / 3)
-  z-index: -1
+  z-index: -100
 
   .line
     width: 100%
     height: 100%
     position: relative
     box-sizing: border-box
+    z-index: -101
 
     border-bottom-style: solid
     border-left-style: solid
@@ -82,43 +86,63 @@ nav
     border-width: calc($small-sp / 2)
     border-color: $purple
 
-    animation-name: line-an
-    animation-duration: 3s
-    animation-timing-function: ease-out
+  //
+  // .line.point
+  //   width: 0%
+  //   height: 0%
+  //   top: 0
+  //   position: absolute
+  //   z-index: -100
+  //   animation-name: line-point-an
+  //   animation-delay: 3s
+  //   animation-duration: 10s
+  //   animation-iteration-count: infinite
+  //   border-color: $green
+  .line.intro-animation
+    animation-name: line-an, line-inf-an
+    animation-duration: 3s, 5s
+    animation-delay: 0s, 3s
+    animation-timing-function: ease-out, linear
+    animation-fill-mode: forwards, none
+    animation-iteration-count: 1, infinite
+    animation-direction: normal, alternate
 
-  .curve
-    width: calc(100% - $custom-margin)
-    height: 100%
+    background: linear-gradient($black, $black) padding-box, radial-gradient($purple 100%, $black) border-box
+    border: transparent
+    border-bottom-style: solid
+    border-left-style: solid
+    
+
+  .line.animation
     position: relative
-    box-sizing: border-box
-
-    border-style: solid
-    border-radius: $radius
-    border-width: calc($small-sp / 2)
-    border-color: $black
-    border-right-color: $purple
-
+    border: transparent
+    background: linear-gradient($black, $black) padding-box, radial-gradient($purple 100%, $black) border-box
+    z-index: -100
+    animation-name: line-inf-an
+    animation-delay: 3s
+    animation-duration: 10s
+    animation-iteration-count: infinite
+    animation-direction: alternate
 
 header
-  animation-name: header-an
-  animation-duration: 3s
-  animation-timing-function: ease
   padding: 2rem
 
 
 #about
   width: 21.97rem
-  animation-name: about-an
-  animation-duration: 3s
-  animation-timing-function: ease
   line-height: 1rem
   padding: 2rem
 
 .menu
   height: 100%
-  width: 3rem
+  width: calc($custom-margin / 2)
   position: fixed
   left: 0
   display: flex
   flex-direction: column
   z-index: 1
+  filter: opacity(0%)
+  animation-fill-mode: forwards
+  animation-name: menu-an
+  animation-delay: 3s
+  animation-duration: 1s

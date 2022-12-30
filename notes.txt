@@ -13,3 +13,5 @@ chi sono
 i miei valori
 
 form di contatto
+
+frameworks, linguaggi, software
