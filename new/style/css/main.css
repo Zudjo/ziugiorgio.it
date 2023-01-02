@@ -11,6 +11,22 @@ html {
   scrollbar-width: none;
 }
 
+@font-face {
+  font-family: "Geo-Sans-Light";
+  src: url("../fonts/GeosansLight.ttf");
+}
+@font-face {
+  font-family: "Gidole-Regular";
+  src: url("../fonts/GidoleRegular.otf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat.ttf");
+}
+* {
+  font-family: "Montserrat";
+}
+
 #language-toggler {
   background-color: transparent;
   border-width: 0;
@@ -61,15 +77,15 @@ html {
     right: 0;
   }
 }
-@keyframes fade {
+@keyframes shish {
   0% {
-    opacity: 100%;
+    background-position: 0% 50%;
   }
   50% {
-    opacity: 0%;
+    background-position: 100% 50%;
   }
   100% {
-    opacity: 100%;
+    background-position: 0% 50%;
   }
 }
 @keyframes line-inf-an {
@@ -395,15 +411,6 @@ div.page {
 div.page img {
   height: 20rem;
 }
-div.page:nth-child(3) {
-  text-align: center;
-}
-div.page:nth-child(3) h2 {
-  padding: 2rem;
-}
-div.page:nth-child(4) {
-  text-align: right;
-}
 div.page:nth-child(4) .decorations {
   transform: scale(1, -1);
 }
@@ -445,35 +452,17 @@ nav li a:hover::after {
 }
 
 .content {
-  margin: 0 8vw;
-  height: 100%;
-  position: relative;
-}
-
-.first .content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: normal;
   align-content: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  position: relative;
+  height: 100%;
+  margin: 0 8vw;
   animation-name: content-an;
   animation-duration: 3s;
   animation-timing-function: ease;
-}
-
-.second .content h2 {
-  height: 25%;
-}
-.second .content .path {
-  height: 75%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-}
-.second .content .path div {
-  width: 33.3333333333%;
 }
 
 .decorations {
@@ -489,7 +478,6 @@ nav li a:hover::after {
   position: relative;
   box-sizing: border-box;
   z-index: -101;
-  top: 0;
   border-bottom-style: solid;
   border-left-style: solid;
   border-bottom-left-radius: 16vw;
@@ -504,7 +492,7 @@ nav li a:hover::after {
   background: linear-gradient(#101010, #101010) padding-box, radial-gradient(#c300ff 100%, #101010) border-box;
   z-index: -100;
   animation-name: line-an, line-inf-an;
-  animation-duration: 3s, 3s;
+  animation-duration: 3s, 5s;
   animation-delay: 0s, 3s;
   animation-timing-function: ease-out, linear;
   animation-fill-mode: forwards, none;
@@ -524,10 +512,6 @@ header {
   padding: 2rem;
 }
 
-.animation {
-  animation: fade 1s;
-}
-
 .menu {
   height: 100%;
   width: 8vw;
@@ -542,49 +526,41 @@ header {
   animation-delay: 3s;
   animation-duration: 1s;
 }
-.menu button {
-  line-height: 4rem;
-}
 
 * {
   font-size: clamp(2px, 1vh + 1vw, 17.5px);
   font-weight: 200;
-  line-height: 1rem;
-  font-family: "Montserrat", sans-serif;
-}
-
-h1 {
-  color: #101010;
-  text-shadow: -1px 0 #f1f7ed, 0 1px #f1f7ed, 1px 0 #f1f7ed, 0 -1px #f1f7ed;
   line-height: 4rem;
 }
-h1 span {
+
+br {
+  line-height: 1rem;
+}
+
+h1, h2 {
+  color: #101010;
+  text-shadow: -1px 0 #f1f7ed, 0 1px #f1f7ed, 1px 0 #f1f7ed, 0 -1px #f1f7ed;
+}
+h1 span, h2 span {
   font-size: inherit;
   transition: text-shadow 1s;
 }
-h1 span:hover {
+h1 span:hover, h2 span:hover {
   text-shadow: -1px 0 #c300ff, 0 1px #c300ff, 1px 0 #c300ff, 0 -1px #c300ff;
-}
-
-h2, h3, h4, h5, h6 {
-  padding: 1.5rem 0;
-  font-weight: 400;
 }
 
 h1 {
   font-size: 4rem;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 2.5rem;
+  font-weight: 400;
 }
 
 h3 {
   font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.25rem;
 }
 
 a {
@@ -599,6 +575,10 @@ a:link {
 }
 a:active {
   color: inherit;
+}
+
+p {
+  line-height: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

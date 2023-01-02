@@ -14,18 +14,8 @@ div.page
   & img
     height: 20rem
 
-  &:nth-child(3)
-    text-align: center
-
-    & h2
-      padding: 2rem
-
-  &:nth-child(4)
-    text-align: right
-
-    & .decorations
-      transform: scale(1, -1)
-
+  &:nth-child(4) .decorations
+    transform: scale(1, -1)
 
 nav
   position: absolute
@@ -63,57 +53,17 @@ nav
         left: 0%
 
 .content
-  margin: 0 calc($custom-margin / 2)
-  height: 100%
+  display: flex
+  flex-wrap: wrap
+  align-items: normal
+  align-content: center
+  justify-content: space-evenly
   position: relative
-  
-.first
-
-  & .content
-    display: flex
-    flex-wrap: wrap
-    align-items: center
-    align-content: center
-    justify-content: center
-    animation-name: content-an
-    animation-duration: 3s
-    animation-timing-function: ease
-
-.second
-
-  & .content
-
-
-    & h2
-      height: 25%
-
-    & .path
-      $experiences: 3
-      height: 75%
-      display: flex
-      flex-direction: row
-      align-items: center
-      align-content: center
-      justify-content: space-between
-
-      & div
-        width: calc(100% / $experiences)
-      //
-      // & div:not(:first-child):not(:last-child)
-      //   padding: 2rem
-      //
-      // & div:first-child
-      //   padding-right: 1rem
-      //   padding-top: 1rem
-      //   padding-bottom: 1rem
-      //
-      // & div:last-child
-      //   padding-left: 1rem
-      //   padding-top: 1rem
-      //   padding-bottom: 1rem
-
-
-
+  height: 100%
+  margin: 0 calc($custom-margin / 2)
+  animation-name: content-an
+  animation-duration: 3s
+  animation-timing-function: ease
 
 
 .decorations
@@ -129,7 +79,6 @@ nav
     position: relative
     box-sizing: border-box
     z-index: -101
-    top: 0
 
     border-bottom-style: solid
     border-left-style: solid
@@ -147,7 +96,7 @@ nav
     z-index: -100
 
     animation-name: line-an, line-inf-an
-    animation-duration: 3s, 3s
+    animation-duration: 3s, 5s
     animation-delay: 0s, 3s
     animation-timing-function: ease-out, linear
     animation-fill-mode: forwards, none
@@ -160,13 +109,11 @@ nav
 header
   padding: 2rem
 
+
 #about
   width: 21.97rem
   line-height: 1rem
   padding: 2rem
-
-.animation
-  animation: fade 1s
 
 .menu
   height: 100%
@@ -181,6 +128,3 @@ header
   animation-name: menu-an
   animation-delay: 3s
   animation-duration: 1s
-
-  & button
-    line-height: 4rem

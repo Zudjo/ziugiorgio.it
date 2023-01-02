@@ -21,26 +21,6 @@ html
   -ms-overflow-style: none
   /* Firefox */
   scrollbar-width: none
-@font-face
-  font-family: "Geo-Sans-Light"
-  src: url("../fonts/GeosansLight.ttf")
-
-@font-face
-  font-family: "Gidole-Regular"
-  src: url("../fonts/GidoleRegular.otf")
-
-@font-face
-  font-family: "Montserrat"
-  src: url("../fonts/Montserrat.ttf")
-
-
-*
-  // font-family: "Gidole-Regular"
-  // font-family: "Geo-Sans-Light"
-  font-family: "Montserrat"
-
-// h1, h2, h3, h4, h5, h6
-//   font-family: "Gidole-Regular"
 #language-toggler
   background-color: transparent
   border-width: 0
@@ -82,17 +62,13 @@ html
     filter: opacity(100%)
     right: 0
 
-@keyframes shish
+@keyframes fade
   0%
-    background-position: 0% 50%
+    opacity: 100%
   50%
-    background-position: 100% 50%
+    opacity: 0%
   100%
-    background-position: 0% 50%
-  // 0%
-  //   background: linear-gradient($black, $black) padding-box, linear-gradient(180deg, $purple, $green) border-box
-  // 100%
-  //   background: linear-gradient($black, $black) padding-box, linear-gradient(360deg, $purple, $green) border-box
+    opacity: 100%
 
 @keyframes line-inf-an
   0%
@@ -313,8 +289,18 @@ div.page
   & img
     height: 20rem
 
-  &:nth-child(4) .decorations
-    transform: scale(1, -1)
+  &:nth-child(3)
+    text-align: center
+
+    & h2
+      padding: 2rem
+
+  &:nth-child(4)
+    text-align: right
+
+    & .decorations
+      transform: scale(1, -1)
+
 
 nav
   position: absolute
@@ -352,17 +338,57 @@ nav
         left: 0%
 
 .content
-  display: flex
-  flex-wrap: wrap
-  align-items: normal
-  align-content: center
-  justify-content: space-evenly
-  position: relative
-  height: 100%
   margin: 0 calc($custom-margin / 2)
-  animation-name: content-an
-  animation-duration: 3s
-  animation-timing-function: ease
+  height: 100%
+  position: relative
+  
+.first
+
+  & .content
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    align-content: center
+    justify-content: center
+    animation-name: content-an
+    animation-duration: 3s
+    animation-timing-function: ease
+
+.second
+
+  & .content
+
+
+    & h2
+      height: 25%
+
+    & .path
+      $experiences: 3
+      height: 75%
+      display: flex
+      flex-direction: row
+      align-items: center
+      align-content: center
+      justify-content: space-between
+
+      & div
+        width: calc(100% / $experiences)
+      //
+      // & div:not(:first-child):not(:last-child)
+      //   padding: 2rem
+      //
+      // & div:first-child
+      //   padding-right: 1rem
+      //   padding-top: 1rem
+      //   padding-bottom: 1rem
+      //
+      // & div:last-child
+      //   padding-left: 1rem
+      //   padding-top: 1rem
+      //   padding-bottom: 1rem
+
+
+
 
 
 .decorations
@@ -378,6 +404,7 @@ nav
     position: relative
     box-sizing: border-box
     z-index: -101
+    top: 0
 
     border-bottom-style: solid
     border-left-style: solid
@@ -385,52 +412,36 @@ nav
     border-width: calc($small-sp / 2)
     border-color: $purple
 
-  //
-  // .line.point
-  //   width: 0%
-  //   height: 0%
-  //   top: 0
-  //   position: absolute
-  //   z-index: -100
-  //   animation-name: line-point-an
-  //   animation-delay: 3s
-  //   animation-duration: 10s
-  //   animation-iteration-count: infinite
-  //   border-color: $green
-  .line.intro-animation
-    animation-name: line-an, line-inf-an
-    animation-duration: 3s, 5s
-    animation-delay: 0s, 3s
-    animation-timing-function: ease-out, linear
-    animation-fill-mode: forwards, none
-    animation-iteration-count: 1, infinite
-    animation-direction: normal, alternate
-
     background: linear-gradient($black, $black) padding-box, radial-gradient($purple 100%, $black) border-box
     border: transparent
-    border-bottom-style: solid
-    border-left-style: solid
-    
 
   .line.animation
     position: relative
     border: transparent
     background: linear-gradient($black, $black) padding-box, radial-gradient($purple 100%, $black) border-box
     z-index: -100
-    animation-name: line-inf-an
-    animation-delay: 3s
-    animation-duration: 10s
-    animation-iteration-count: infinite
-    animation-direction: alternate
+
+    animation-name: line-an, line-inf-an
+    animation-duration: 3s, 3s
+    animation-delay: 0s, 3s
+    animation-timing-function: ease-out, linear
+    animation-fill-mode: forwards, none
+    animation-iteration-count: 1, infinite
+    animation-direction: normal, alternate
+
+    border-bottom-style: solid
+    border-left-style: solid
 
 header
   padding: 2rem
-
 
 #about
   width: 21.97rem
   line-height: 1rem
   padding: 2rem
+
+.animation
+  animation: fade 1s
 
 .menu
   height: 100%
@@ -445,27 +456,42 @@ header
   animation-name: menu-an
   animation-delay: 3s
   animation-duration: 1s
+
+  & button
+    line-height: 4rem
 *
   font-size: clamp(2px, calc(1vh + 1vw), 17.5px)
   font-weight: 200
+  line-height: 1rem
+  font-family: "Montserrat", sans-serif
+
+h1
+  color: $black
+  text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white
   line-height: 4rem
 
-br
-  line-height: 1rem
+  & span
+    font-size: inherit
+    transition: text-shadow 1s
 
-h1, h2
-  color: $green
+    &:hover
+      text-shadow: -1px 0 $purple, 0 1px $purple, 1px 0 $purple, 0 -1px $purple
+
+h2, h3, h4, h5, h6
+  padding: 1.5rem 0
+  font-weight: 400
 
 h1
   font-size: 4rem
-  font-weight: 400
 
 h2
   font-size: 2.5rem
-  font-weight: 400
 
 h3
   font-size: 1.5rem
+
+h4
+  font-size: 1.25rem
 
 a
   color: inherit
@@ -479,7 +505,4 @@ a
 
   &:active
     color: inherit
-
-p
-  line-height: 1rem
 
