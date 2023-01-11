@@ -34,7 +34,8 @@
   <body>
 
     <div class="menu">
-      <button id="language-toggler">EN</button>
+      <span><button id="language-toggler">EN</button></span>
+      <span><button id="cv">CV</button></span>
     </div>
 
     <!-- First page -->
@@ -83,7 +84,7 @@
         </div> -->
 
         <div class="path">
-          <div class="path-time-line animated-border"></div>
+          <section class="path-time-line animated-border"></section>
           <div class="experience">
             <img src=".\media\images\logo-giorgi-ufficio.webp" alt="">
             <h4>Giorgi Ufficio</h4>
@@ -103,9 +104,9 @@
           </div>
 
           <div class="experience">
-            <img src=".\media\images\logo-websolute.webp" alt="">
-            <h4>Websolute</h4>
-            <p>Sviluppatore web di mantenimento</p>
+            <img src=".\media\images\logo-magedevel.webp" alt="">
+            <h4>MageDevel</h4>
+            <p>Sviluppatore web e-commerce</p>
           </div>
         </div>
 
@@ -122,9 +123,10 @@
 
       <section class="content">
 
-        <div>
-          <form method="post">
-            <input type="text" ><br>
+        <div class="animated-border">
+          <form method="post" action="php/sendEmail.php">
+            <input type="text" class="animated-border" placeholder="Your e-mail">
+            <textarea name="message"></textarea><br>
             <input type="submit" class="animated-border" value="Invia">
           </form>
         </div>

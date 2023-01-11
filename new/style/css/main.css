@@ -11,22 +11,6 @@ html {
   scrollbar-width: none;
 }
 
-@font-face {
-  font-family: "Geo-Sans-Light";
-  src: url("../fonts/GeosansLight.ttf");
-}
-@font-face {
-  font-family: "Gidole-Regular";
-  src: url("../fonts/GidoleRegular.otf");
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat.ttf");
-}
-* {
-  font-family: "Montserrat";
-}
-
 #language-toggler {
   background-color: transparent;
   border-width: 0;
@@ -77,15 +61,15 @@ html {
     right: 0;
   }
 }
-@keyframes shish {
+@keyframes fade {
   0% {
-    background-position: 0% 50%;
+    opacity: 100%;
   }
   50% {
-    background-position: 100% 50%;
+    opacity: 0%;
   }
   100% {
-    background-position: 0% 50%;
+    opacity: 100%;
   }
 }
 @keyframes line-inf-an {
@@ -411,58 +395,170 @@ div.page {
 div.page img {
   height: 20rem;
 }
+div.page:nth-child(3) {
+  text-align: center;
+}
+div.page:nth-child(3) h2 {
+  padding: 2rem;
+}
+div.page:nth-child(4) {
+  text-align: right;
+}
 div.page:nth-child(4) .decorations {
   transform: scale(1, -1);
 }
 
-nav {
-  position: absolute;
-  z-index: 1;
-  animation-name: nav-an;
-  animation-duration: 3s;
-  margin-left: 16vw;
-}
-nav li {
-  display: inline;
-  position: relative;
-  font-size: 1.25rem;
-  margin-right: 3rem;
-}
-nav li a {
-  padding-bottom: 0.25rem;
-}
-nav li a::after {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  filter: opacity(50%);
+.content {
+  margin: 0 8vw;
   height: 100%;
-  width: 10%;
-  left: 45%;
-  bottom: -0.25rem;
-  border-color: #f1f7ed;
-  border-width: 0.01rem;
-  border-bottom-style: solid;
-  transition: width 1s, filter 1s, left 1s;
-}
-nav li a:hover::after {
-  width: 100%;
-  filter: opacity(100%);
-  left: 0%;
+  position: relative;
 }
 
-.content {
+.first .content, .third .content {
   display: flex;
   flex-wrap: wrap;
-  align-items: normal;
+  align-items: center;
   align-content: center;
   justify-content: space-evenly;
-  position: relative;
-  height: 100%;
-  margin: 0 8vw;
   animation-name: content-an;
   animation-duration: 3s;
   animation-timing-function: ease;
+}
+.first .content #about, .third .content #about {
+  height: 8rem;
+}
+
+.second .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.second .content h2 {
+  line-height: 2.5rem;
+  font-weight: 200;
+}
+.second .content .path-line {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.second .content .path-line .path-time-line {
+  border-bottom: solid 1px #f1f7ed;
+  width: 100%;
+  position: absolute;
+}
+.second .content .path-line .path-point {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 calc(12.5% - 1rem);
+  border-radius: 50%;
+  background-color: #f1f7ed;
+}
+.second .content .path {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: space-between;
+  margin: 2rem;
+  width: 100%;
+  position: relative;
+}
+@media screen and (max-width: 481px) {
+  .second .content .path {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.second .content .path .path-time-line {
+  border-bottom: solid 0.1rem transparent;
+  width: calc(75% - 3rem);
+  margin: 0 calc(12.5% + 1.5rem);
+  position: absolute;
+  height: 1.5rem;
+  z-index: -100;
+}
+@media screen and (max-width: 481px) {
+  .second .content .path .path-time-line {
+    border-left: solid 0.1rem transparent;
+    border-bottom: none;
+    height: calc(100% - 6rem);
+    margin: 3rem 0;
+    width: 0;
+  }
+}
+.second .content .path .path-time-line div:nth-child(1) {
+  position: absolute;
+  right: calc(-2 * (12.5% - 1.5rem + 1.5rem));
+  width: calc((12.5% - 1.5rem) * 2);
+  bottom: 0;
+  border-bottom: dashed 1px #f1f7ed;
+  box-shadow: 3rem 0 3rem inset #f1f7ed;
+}
+.second .content .path > div.experience {
+  text-align: center;
+  width: 25%;
+}
+.second .content .path > div.experience img {
+  height: 3rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 0 1rem 1rem #101010;
+}
+.second .content .path > div.experience h4 {
+  padding: 1rem 0;
+}
+.second .content .path > div.experience p {
+  padding-top: 1rem;
+}
+@media screen and (max-width: 481px) {
+  .second .content .path > div.experience {
+    width: 100%;
+    height: calc((100% - 4rem) / 4);
+    background-color: #101010;
+    box-shadow: 0 0 1rem 1rem #101010;
+    display: flex;
+    position: relative;
+    margin: 3rem 0;
+    align-items: center;
+  }
+  .second .content .path > div.experience > img {
+    order: 2;
+    width: 33%;
+    object-fit: scale-down;
+    padding: 0 1.5rem;
+  }
+  .second .content .path > div.experience > h4 {
+    order: 1;
+    width: 33%;
+    text-align: right;
+    z-index: 2;
+    padding: 0;
+  }
+  .second .content .path > div.experience > p {
+    order: 3;
+    width: 33%;
+    text-align: left;
+    z-index: 2;
+    padding: 0;
+  }
+}
+
+.animated-border {
+  border: transparent;
+  background: linear-gradient(#101010, #101010) padding-box, radial-gradient(#c300ff 100%, #101010) border-box;
+  animation-name: line-inf-an;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .decorations {
@@ -478,10 +574,11 @@ nav li a:hover::after {
   position: relative;
   box-sizing: border-box;
   z-index: -101;
+  top: 0;
   border-bottom-style: solid;
   border-left-style: solid;
   border-bottom-left-radius: 16vw;
-  border-width: 0.165rem;
+  border-width: 0.66rem;
   border-color: #c300ff;
   background: linear-gradient(#101010, #101010) padding-box, radial-gradient(#c300ff 100%, #101010) border-box;
   border: transparent;
@@ -492,7 +589,7 @@ nav li a:hover::after {
   background: linear-gradient(#101010, #101010) padding-box, radial-gradient(#c300ff 100%, #101010) border-box;
   z-index: -100;
   animation-name: line-an, line-inf-an;
-  animation-duration: 3s, 5s;
+  animation-duration: 3s, 3s;
   animation-delay: 0s, 3s;
   animation-timing-function: ease-out, linear;
   animation-fill-mode: forwards, none;
@@ -500,6 +597,7 @@ nav li a:hover::after {
   animation-direction: normal, alternate;
   border-bottom-style: solid;
   border-left-style: solid;
+  border-width: 0.1rem;
 }
 
 header {
@@ -512,9 +610,13 @@ header {
   padding: 2rem;
 }
 
+.animation {
+  animation: fade 1s;
+}
+
 .menu {
   height: 100%;
-  width: 8vw;
+  width: 4rem;
   position: fixed;
   left: 0;
   display: flex;
@@ -526,41 +628,107 @@ header {
   animation-delay: 3s;
   animation-duration: 1s;
 }
-
-* {
-  font-size: clamp(2px, 1vh + 1vw, 17.5px);
-  font-weight: 200;
+.menu button {
   line-height: 4rem;
 }
 
-br {
+.third .content div form {
+  position: relative;
+}
+.third .content div form input[type=text] {
+  width: 10rem;
+  height: 1rem;
+  background-color: #101010;
+  color: #f1f7ed;
+  border: solid 0.1rem transparent;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 0.25rem;
+  caret-color: #c300ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.third .content div form input[type=text]:-ms-input-placeholder {
+  color: #f1f7ed;
+}
+.third .content div form input[type=text]::placeholder {
+  color: #f1f7ed;
+  opacity: 0.5;
+}
+.third .content div form input[type=text]:focus {
+  outline: none;
+}
+.third .content div form textarea {
+  width: 25rem;
+  height: 11rem;
+  background-color: #101010;
+  color: #f1f7ed;
+  border: solid 0.1rem transparent;
+  border-radius: 0.5rem;
+  padding: 4rem 1rem;
+  caret-color: #c300ff;
+  resize: none;
+}
+.third .content div form textarea:focus {
+  outline: none;
+}
+.third .content div form input[type=submit] {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 0.5rem;
+  color: #c300ff;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 1rem;
+  transition: filter 1s;
+  filter: opacity(50%);
+}
+.third .content div form input[type=submit]:hover {
+  cursor: pointer;
+  filter: opacity(100%);
+}
+
+* {
+  font-size: clamp(2px, 1vh + 1vw, 25px);
+  font-weight: 200;
   line-height: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1, h2 {
   color: #101010;
   text-shadow: -1px 0 #f1f7ed, 0 1px #f1f7ed, 1px 0 #f1f7ed, 0 -1px #f1f7ed;
+  line-height: 4rem;
 }
 h1 span, h2 span {
   font-size: inherit;
-  transition: text-shadow 1s;
+  transition: text-shadow 0.25s;
 }
 h1 span:hover, h2 span:hover {
   text-shadow: -1px 0 #c300ff, 0 1px #c300ff, 1px 0 #c300ff, 0 -1px #c300ff;
 }
 
-h1 {
-  font-size: 4rem;
+h2, h3, h4, h5, h6 {
+  padding: 1.5rem 0;
   font-weight: 400;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
 h2 {
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: 3rem;
 }
 
 h3 {
   font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
 }
 
 a {
@@ -575,10 +743,6 @@ a:link {
 }
 a:active {
   color: inherit;
-}
-
-p {
-  line-height: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

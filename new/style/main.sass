@@ -11,6 +11,8 @@ $black: #101010
 $white: #f1f7ed
 $green: #7ca982
 $purple: #c300ff
+
+$experiences: 4
 /* Hide scrollbar for Chrome, Safari and Opera */
 html::-webkit-scrollbar
   display: none
@@ -21,26 +23,6 @@ html
   -ms-overflow-style: none
   /* Firefox */
   scrollbar-width: none
-@font-face
-  font-family: "Geo-Sans-Light"
-  src: url("../fonts/GeosansLight.ttf")
-
-@font-face
-  font-family: "Gidole-Regular"
-  src: url("../fonts/GidoleRegular.otf")
-
-@font-face
-  font-family: "Montserrat"
-  src: url("../fonts/Montserrat.ttf")
-
-
-*
-  // font-family: "Gidole-Regular"
-  // font-family: "Geo-Sans-Light"
-  font-family: "Montserrat"
-
-// h1, h2, h3, h4, h5, h6
-//   font-family: "Gidole-Regular"
 #language-toggler
   background-color: transparent
   border-width: 0
@@ -82,17 +64,13 @@ html
     filter: opacity(100%)
     right: 0
 
-@keyframes shish
+@keyframes fade
   0%
-    background-position: 0% 50%
+    opacity: 100%
   50%
-    background-position: 100% 50%
+    opacity: 0%
   100%
-    background-position: 0% 50%
-  // 0%
-  //   background: linear-gradient($black, $black) padding-box, linear-gradient(180deg, $purple, $green) border-box
-  // 100%
-  //   background: linear-gradient($black, $black) padding-box, linear-gradient(360deg, $purple, $green) border-box
+    opacity: 100%
 
 @keyframes line-inf-an
   0%
@@ -313,57 +291,187 @@ div.page
   & img
     height: 20rem
 
-  &:nth-child(4) .decorations
-    transform: scale(1, -1)
+  &:nth-child(3)
+    text-align: center
 
-nav
-  position: absolute
-  z-index: 1
-  animation-name: nav-an
-  animation-duration: 3s
-  margin-left: $custom-margin
+    & h2
+      padding: 2rem
 
-  & li
-    display: inline
-    position: relative
-    font-size: 1.25rem
-    margin-right: $large-sp
+  &:nth-child(4)
+    text-align: right
 
-    & a
-      padding-bottom: .25rem
-
-      &::after
-        content: ""
-        z-index: 1
-        position: absolute
-        filter: opacity(50%)
-        height: 100%
-        width: 10%
-        left: 45%
-        bottom: -.25rem
-        border-color: $white
-        border-width: .01rem
-        border-bottom-style: solid
-        transition: width 1s, filter 1s, left 1s
-
-      &:hover::after
-        width: 100%
-        filter: opacity(100%)
-        left: 0%
+    & .decorations
+      transform: scale(1, -1)
 
 .content
-  display: flex
-  flex-wrap: wrap
-  align-items: normal
-  align-content: center
-  justify-content: space-evenly
-  position: relative
-  height: 100%
   margin: 0 calc($custom-margin / 2)
-  animation-name: content-an
-  animation-duration: 3s
-  animation-timing-function: ease
+  height: 100%
+  position: relative
 
+.first, .third
+
+  & .content
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    align-content: center
+    justify-content: space-evenly
+    animation-name: content-an
+    animation-duration: 3s
+    animation-timing-function: ease
+
+    & #about
+      height: 8rem
+
+
+.second
+
+  & .content
+    display: flex
+    flex-direction: column
+    align-items: center
+    align-content: center
+    justify-content: space-evenly
+
+    & h2
+      line-height: 2.5rem
+      font-weight: 200
+
+    & .path-line
+      width: 100%
+      padding: 2rem
+      display: flex
+      flex-direction: row
+      justify-content: space-evenly
+      align-content: center
+      align-items: center
+
+      & .path-time-line
+        border-bottom: solid 1px $white
+        width: 100%
+        position: absolute
+
+      & .path-point
+        width: 1rem
+        height: 1rem
+        margin: 0 calc(50% / $experiences - 1rem)
+        border-radius: 50%
+        background-color: $white
+
+
+
+    & .path
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      align-content: center
+      justify-content: space-between
+      margin: 2rem
+      width: 100%
+      position: relative
+
+      @media screen and (max-width: 481px)
+        flex-direction: column
+        align-items: center
+
+      & .path-time-line
+        border-bottom: solid .1rem transparent
+        width: calc((100% * (1 - (1 / $experiences))) - 3rem)
+        margin: 0 calc((100% - (100% * (1 - (1 / $experiences)))) / 2 + 1.5rem)
+        position: absolute
+        height: 1.5rem
+        z-index: -100
+
+        @media screen and (max-width: 481px)
+          border-left: solid .1rem transparent
+          border-bottom: none
+          height: calc(100% - 6rem)
+          margin: 3rem 0
+          width: 0
+
+
+        & div:nth-child(1)
+          position: absolute
+          right: calc(-2 * ((100% / $experiences / 2 - 1.5rem) + 1.5rem))
+          width: calc((100% / $experiences / 2 - 1.5rem) * 2)
+          bottom: 0
+          border-bottom: dashed 1px $white
+          box-shadow: 3rem 0 3rem inset $white
+
+      & > div.experience
+        text-align: center
+        width: calc(100% / $experiences)
+
+        & img
+          height: 3rem
+          padding-bottom: 1rem
+          box-shadow: 0 0 1rem 1rem $black
+
+        & h4
+          padding: 1rem 0
+
+        & p
+          padding-top: 1rem
+
+
+        @media screen and (max-width: 481px)
+          width: 100%
+          height: calc((100% - 4rem) / $experiences)
+          background-color: $black
+          box-shadow: 0 0 1rem 1rem $black
+          display: flex
+          position: relative
+          margin: 3rem 0
+          align-items: center
+
+          & > img
+            order: 2
+            width: 33%
+            object-fit: scale-down
+            padding: 0 1.5rem
+          & > h4
+            order: 1
+            width: 33%
+            text-align: right
+            z-index: 2
+            padding: 0
+          & > p
+            order: 3
+            width: 33%
+            text-align: left
+            z-index: 2
+            padding: 0
+
+        // &:not(:nth-child(2)):not(:nth-child(4))
+        //   @media screen and (max-width: 481px)
+        //     margin: 5rem 0
+
+      //
+      // & div:not(:first-child):not(:last-child)
+      //   padding: 2rem
+      //
+      // & div:first-child
+      //   padding-right: 1rem
+      //   padding-top: 1rem
+      //   padding-bottom: 1rem
+      //
+      // & div:last-child
+      //   padding-left: 1rem
+      //   padding-top: 1rem
+      //   padding-bottom: 1rem
+
+
+.animated-border
+  border: transparent
+  background: linear-gradient($black, $black) padding-box, radial-gradient($purple 100%, $black) border-box
+
+  animation-name: line-inf-an
+  animation-duration: 3s
+  animation-delay: 3s
+  animation-timing-function: linear
+  animation-fill-mode: none
+  animation-iteration-count: infinite
+  animation-direction: alternate
 
 .decorations
   box-sizing: border-box
@@ -378,11 +486,12 @@ nav
     position: relative
     box-sizing: border-box
     z-index: -101
+    top: 0
 
     border-bottom-style: solid
     border-left-style: solid
     border-bottom-left-radius: $radius
-    border-width: calc($small-sp / 2)
+    border-width: calc($small-sp * 2)
     border-color: $purple
 
     background: linear-gradient($black, $black) padding-box, radial-gradient($purple 100%, $black) border-box
@@ -395,7 +504,7 @@ nav
     z-index: -100
 
     animation-name: line-an, line-inf-an
-    animation-duration: 3s, 5s
+    animation-duration: 3s, 3s
     animation-delay: 0s, 3s
     animation-timing-function: ease-out, linear
     animation-fill-mode: forwards, none
@@ -404,19 +513,22 @@ nav
 
     border-bottom-style: solid
     border-left-style: solid
+    border-width: .1rem
 
 header
   padding: 2rem
-
 
 #about
   width: 21.97rem
   line-height: 1rem
   padding: 2rem
 
+.animation
+  animation: fade 1s
+
 .menu
   height: 100%
-  width: calc($custom-margin / 2)
+  width: 4rem
   position: fixed
   left: 0
   display: flex
@@ -427,36 +539,103 @@ header
   animation-name: menu-an
   animation-delay: 3s
   animation-duration: 1s
-*
-  font-size: clamp(2px, calc(1vh + 1vw), 17.5px)
-  font-weight: 200
-  line-height: 4rem
 
-br
+  & button
+    line-height: 4rem
+
+
+.third
+  & .content
+    & div
+      & form
+        position: relative
+
+        & input[type="text"]
+          width: 10rem
+          height: 1rem
+          background-color: $black
+          color: $white
+          border: solid .1rem transparent
+          border-radius: .5rem
+          margin: 1rem
+          padding: .25rem
+          caret-color: $purple
+          position: absolute
+          top: 0
+          left: 0
+
+          &:-ms-input-placeholder
+            color: $white
+
+          &::placeholder
+            color: $white
+            opacity: 0.5
+
+          &:focus
+            outline: none
+
+        & textarea
+          width: 25rem
+          height: 11rem
+          background-color: $black
+          color: $white
+          border: solid .1rem transparent
+          border-radius: .5rem
+          padding: 4rem 1rem
+          caret-color: $purple
+          resize: none
+
+          &:focus
+            outline: none
+
+        & input[type="submit"]
+          position: absolute
+          bottom: 0
+          right: 0
+          border-radius: .5rem
+          color: $purple
+          background-color: transparent
+          border-color: transparent
+          padding: 1rem
+          transition: filter 1s
+          filter: opacity(50%)
+
+          &:hover
+            cursor: pointer
+            filter: opacity(100%)
+*
+  font-size: clamp(2px, calc(1vh + 1vw), 25px)
+  font-weight: 200
   line-height: 1rem
+  font-family: "Montserrat", sans-serif
 
 h1, h2
   color: $black
   text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white
+  line-height: 4rem
 
   & span
     font-size: inherit
-    transition: text-shadow 1s
+    transition: text-shadow 0.25s
 
     &:hover
       text-shadow: -1px 0 $purple, 0 1px $purple, 1px 0 $purple, 0 -1px $purple
 
+h2, h3, h4, h5, h6
+  padding: 1.5rem 0
+  font-weight: 400
 
 h1
   font-size: 4rem
-  font-weight: 400
 
 h2
-  font-size: 2.5rem
-  font-weight: 400
+  font-size: 3rem
 
 h3
   font-size: 1.5rem
+
+h4
+  font-size: 1.25rem
 
 a
   color: inherit
@@ -470,7 +649,4 @@ a
 
   &:active
     color: inherit
-
-p
-  line-height: 1rem
 

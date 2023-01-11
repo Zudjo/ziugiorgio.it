@@ -3,24 +3,16 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
 /* Hide scrollbar for IE, Edge and Firefox */
-html {
+html, textarea {
   /* IE and Edge */
   -ms-overflow-style: none;
   /* Firefox */
   scrollbar-width: none;
-}
-
-#language-toggler {
-  background-color: transparent;
-  border-width: 0;
-  color: #f1f7ed;
-  filter: opacity(50%);
-  transition-duration: 1s;
-}
-#language-toggler:hover {
-  cursor: pointer;
-  filter: opacity(100%);
 }
 
 @keyframes line-an {
@@ -408,42 +400,6 @@ div.page:nth-child(4) .decorations {
   transform: scale(1, -1);
 }
 
-nav {
-  position: absolute;
-  z-index: 1;
-  animation-name: nav-an;
-  animation-duration: 3s;
-  margin-left: 16vw;
-}
-nav li {
-  display: inline;
-  position: relative;
-  font-size: 1.25rem;
-  margin-right: 3rem;
-}
-nav li a {
-  padding-bottom: 0.25rem;
-}
-nav li a::after {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  filter: opacity(50%);
-  height: 100%;
-  width: 10%;
-  left: 45%;
-  bottom: -0.25rem;
-  border-color: #f1f7ed;
-  border-width: 0.01rem;
-  border-bottom-style: solid;
-  transition: width 1s, filter 1s, left 1s;
-}
-nav li a:hover::after {
-  width: 100%;
-  filter: opacity(100%);
-  left: 0%;
-}
-
 .content {
   margin: 0 8vw;
   height: 100%;
@@ -541,6 +497,9 @@ nav li a:hover::after {
   text-align: center;
   width: 25%;
 }
+.second .content .path > div.experience:not(:first-of-type):not(:last-of-type) {
+  padding: 0 1rem;
+}
 .second .content .path > div.experience img {
   height: 3rem;
   padding-bottom: 1rem;
@@ -567,7 +526,7 @@ nav li a:hover::after {
     order: 2;
     width: 33%;
     object-fit: scale-down;
-    padding: 0;
+    padding: 0 1.5rem;
   }
   .second .content .path > div.experience > h4 {
     order: 1;
@@ -614,7 +573,7 @@ nav li a:hover::after {
   border-bottom-style: solid;
   border-left-style: solid;
   border-bottom-left-radius: 16vw;
-  border-width: 0.165rem;
+  border-width: 0.66rem;
   border-color: #c300ff;
   background: linear-gradient(#101010, #101010) padding-box, radial-gradient(#c300ff 100%, #101010) border-box;
   border: transparent;
@@ -650,6 +609,74 @@ header {
   animation: fade 1s;
 }
 
+.third .content div {
+  position: relative;
+  border: solid 0.1rem transparent;
+  border-radius: 0.5rem;
+  width: 50%;
+  height: 50%;
+}
+.third .content div form input[type=text] {
+  width: calc(100% - 2rem);
+  height: 1.25rem;
+  background-color: #101010;
+  color: #f1f7ed;
+  border-left: solid 0.1rem transparent;
+  border-radius: 0.25rem;
+  margin: 1rem;
+  padding-left: 0.5rem;
+  caret-color: #c300ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.third .content div form input[type=text]:-ms-input-placeholder {
+  color: #f1f7ed;
+}
+.third .content div form input[type=text]::placeholder {
+  color: #f1f7ed;
+  opacity: 0.5;
+}
+.third .content div form input[type=text]:focus {
+  outline: none;
+}
+.third .content div form textarea {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0.5rem;
+  background-color: #101010;
+  color: #f1f7ed;
+  padding-top: 4rem;
+  padding-right: 4rem;
+  padding-left: 1rem;
+  caret-color: #c300ff;
+  resize: none;
+  border: none;
+}
+.third .content div form textarea:focus {
+  outline: none;
+}
+.third .content div form input[type=submit] {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: solid 0.1rem transparent;
+  border-radius: 0.25rem;
+  color: #f1f7ed;
+  background-color: transparent;
+  border-color: transparent;
+  padding-bottom: 0.5rem;
+  margin: 1rem;
+  transition: filter 1s;
+  filter: opacity(50%);
+}
+.third .content div form input[type=submit]:hover {
+  cursor: pointer;
+  filter: opacity(100%);
+}
+
 .menu {
   height: 100%;
   width: 4rem;
@@ -657,38 +684,34 @@ header {
   left: 0;
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  z-index: 10;
   filter: opacity(0%);
+  align-items: center;
   animation-fill-mode: forwards;
   animation-name: menu-an;
   animation-delay: 3s;
   animation-duration: 1s;
 }
-.menu button {
-  line-height: 4rem;
-}
-
-.third .content div form {
-  position: relative;
-}
-.third .content div form input[type=text] {
-  width: 25rem;
-  height: 15rem;
+.menu span {
   background-color: #101010;
-  color: #f1f7ed;
-  border: solid 0.1rem #f1f7ed;
-  border-radius: 0.1rem;
+  box-shadow: 0 0 1rem 0.5rem #101010;
+  margin: 1rem 0;
 }
-.third .content div form input[type=submit] {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  border: solid 0.1rem transparent;
-  border-radius: 0.1rem;
+.menu span button {
+  width: fit-content;
+  background-color: transparent;
+  border-width: 0;
+  color: #f1f7ed;
+  filter: opacity(50%);
+  transition-duration: 1s;
+}
+.menu span button:hover {
+  cursor: pointer;
+  filter: opacity(100%);
 }
 
 * {
-  font-size: clamp(2px, 1vh + 1vw, 17.5px);
+  font-size: clamp(2px, 1vh + 1vw, 25px);
   font-weight: 200;
   line-height: 1rem;
   font-family: "Montserrat", sans-serif;

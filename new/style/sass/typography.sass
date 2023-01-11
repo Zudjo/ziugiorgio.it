@@ -1,33 +1,36 @@
 *
-  font-size: clamp(2px, calc(1vh + 1vw), 17.5px)
+  font-size: clamp(2px, calc(1vh + 1vw), 25px)
   font-weight: 200
-  line-height: 4rem
-
-br
   line-height: 1rem
+  font-family: "Montserrat", sans-serif
 
 h1, h2
   color: $black
   text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white
+  line-height: 4rem
 
   & span
     font-size: inherit
-    transition: text-shadow 1s
+    transition: text-shadow 0.25s
 
     &:hover
       text-shadow: -1px 0 $purple, 0 1px $purple, 1px 0 $purple, 0 -1px $purple
 
+h2, h3, h4, h5, h6
+  padding: 1.5rem 0
+  font-weight: 400
 
 h1
   font-size: 4rem
-  font-weight: 400
 
 h2
-  font-size: 2.5rem
-  font-weight: 400
+  font-size: 3rem
 
 h3
   font-size: 1.5rem
+
+h4
+  font-size: 1.25rem
 
 a
   color: inherit
@@ -41,6 +44,3 @@ a
 
   &:active
     color: inherit
-
-p
-  line-height: 1rem

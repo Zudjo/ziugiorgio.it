@@ -17,22 +17,15 @@ $experiences: 4
 html::-webkit-scrollbar
   display: none
 
+textarea::-webkit-scrollbar
+    display: none
+    
 /* Hide scrollbar for IE, Edge and Firefox */
-html
+html, textarea
   /* IE and Edge */
   -ms-overflow-style: none
   /* Firefox */
   scrollbar-width: none
-#language-toggler
-  background-color: transparent
-  border-width: 0
-  color: $white
-  filter: opacity(50%)
-  transition-duration: 1s
-
-  &:hover
-    cursor: pointer
-    filter: opacity(100%)
 // an = animation
 
 @keyframes line-an
@@ -303,42 +296,6 @@ div.page
     & .decorations
       transform: scale(1, -1)
 
-
-nav
-  position: absolute
-  z-index: 1
-  animation-name: nav-an
-  animation-duration: 3s
-  margin-left: $custom-margin
-
-  & li
-    display: inline
-    position: relative
-    font-size: 1.25rem
-    margin-right: $large-sp
-
-    & a
-      padding-bottom: .25rem
-
-      &::after
-        content: ""
-        z-index: 1
-        position: absolute
-        filter: opacity(50%)
-        height: 100%
-        width: 10%
-        left: 45%
-        bottom: -.25rem
-        border-color: $white
-        border-width: .01rem
-        border-bottom-style: solid
-        transition: width 1s, filter 1s, left 1s
-
-      &:hover::after
-        width: 100%
-        filter: opacity(100%)
-        left: 0%
-
 .content
   margin: 0 calc($custom-margin / 2)
   height: 100%
@@ -437,7 +394,10 @@ nav
       & > div.experience
         text-align: center
         width: calc(100% / $experiences)
-        
+
+        &:not(:first-of-type):not(:last-of-type)
+          padding: 0 1rem
+
         & img
           height: 3rem
           padding-bottom: 1rem
@@ -464,7 +424,7 @@ nav
             order: 2
             width: 33%
             object-fit: scale-down
-            padding: 0
+            padding: 0 1.5rem
           & > h4
             order: 1
             width: 33%
@@ -527,7 +487,7 @@ nav
     border-bottom-style: solid
     border-left-style: solid
     border-bottom-left-radius: $radius
-    border-width: calc($small-sp / 2)
+    border-width: calc($small-sp * 2)
     border-color: $purple
 
     background: linear-gradient($black, $black) padding-box, radial-gradient($purple 100%, $black) border-box
@@ -562,6 +522,77 @@ header
 .animation
   animation: fade 1s
 
+.third
+  & .content
+    & div
+      position: relative
+      border: solid .1rem transparent
+      border-radius: .5rem
+      width: 50%
+      height: 50%
+
+      & form
+        & input[type="text"]
+          width: calc(100% - 2rem)
+          height: 1.25rem
+          background-color: $black
+          color: $white
+          border-left: solid .1rem transparent
+          border-radius: .25rem
+          margin: 1rem
+          padding-left: .5rem
+          caret-color: $purple
+          position: absolute
+          top: 0
+          left: 0
+
+          &:-ms-input-placeholder
+            color: $white
+
+          &::placeholder
+            color: $white
+            opacity: 0.5
+
+          &:focus
+            outline: none
+
+        & textarea
+          width: 100%
+          height: 100%
+          max-width: 100%
+          max-height: 100%
+          margin: .5rem
+          background-color: $black
+          color: $white
+          padding-top: 4rem
+          padding-right: 4rem
+          padding-left: 1rem
+          caret-color: $purple
+          resize: none
+          border: none
+
+          &:focus
+            outline: none
+
+        & input[type="submit"]
+          position: absolute
+          bottom: 0
+          right: 0
+          border-bottom: solid .1rem transparent
+          border-radius: .25rem
+          color: $white
+          background-color: transparent
+          border-color: transparent
+          padding-bottom: .5rem
+          margin: 1rem
+          transition: filter 1s
+          filter: opacity(50%)
+
+          &:hover
+            cursor: pointer
+            filter: opacity(100%)
+
+
 .menu
   height: 100%
   width: 4rem
@@ -569,39 +600,32 @@ header
   left: 0
   display: flex
   flex-direction: column
-  z-index: 1
+  z-index: 10
   filter: opacity(0%)
+  align-items: center
   animation-fill-mode: forwards
   animation-name: menu-an
   animation-delay: 3s
   animation-duration: 1s
 
-  & button
-    line-height: 4rem
+  & span
+    background-color: $black
+    box-shadow: 0 0 1rem .5rem $black
+    margin: 1rem 0
 
+    & button
+      width: fit-content
+      background-color: transparent
+      border-width: 0
+      color: $white
+      filter: opacity(50%)
+      transition-duration: 1s
 
-.third
-  & .content
-    & div
-      & form
-        position: relative
-
-        & input[type="text"]
-          width: 25rem
-          height: 15rem
-          background-color: $black
-          color: $white
-          border: solid .1rem $white
-          border-radius: .1rem
-
-        & input[type="submit"]
-          position: absolute
-          bottom: 1rem
-          right: 1rem
-          border: solid .1rem transparent
-          border-radius: .1rem
+      &:hover
+        cursor: pointer
+        filter: opacity(100%)
 *
-  font-size: clamp(2px, calc(1vh + 1vw), 17.5px)
+  font-size: clamp(2px, calc(1vh + 1vw), 25px)
   font-weight: 200
   line-height: 1rem
   font-family: "Montserrat", sans-serif

@@ -20,6 +20,11 @@
     <meta name="msapplication-config" content="media/images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+
     <!-- Javascript -->
     <script src=".\js\language-toggler.js" type="module"></script>
 
@@ -33,7 +38,7 @@
     </div>
 
     <!-- First page -->
-    <div class="page">
+    <div class="page first">
 
       <!-- Decorations -->
       <div class="decorations">
@@ -66,27 +71,67 @@
     </div>
 
     <!-- Second page -->
-    <div class="page">
-
+    <div class="page second">
       <section class="content">
-        <header>
-          <h2>Conoscenze</h2>
-          <h4>Linguaggi, framework e software che fanno parte del mio bagaglio</h4>
-        </header>
+        <h2>Il mio percorso</h2>
 
-        <div class="">
+        <!-- <div class="path-line">
+          <div class="path-time-line"></div>
+          <div class="path-point"></div>
+          <div class="path-point"></div>
+          <div class="path-point"></div>
+        </div> -->
 
+        <div class="path">
+          <div class="path-time-line animated-border"></div>
+          <div class="experience">
+            <img src=".\media\images\logo-giorgi-ufficio.webp" alt="">
+            <h4>Giorgi Ufficio</h4>
+            <p>Stage scolastico come tenico informatico</p>
+          </div>
+
+          <div class="experience">
+            <img src=".\media\images\logo-itis.webp" alt="">
+            <h4>ITIS Enrico Mattei</h4>
+            <p>Diploma di perito informatico</p>
+          </div>
+
+          <div class="experience">
+            <img src=".\media\images\logo-websolute.webp" alt="">
+            <h4>Websolute</h4>
+            <p>Sviluppatore web di mantenimento</p>
+          </div>
+
+          <div class="experience">
+            <img src=".\media\images\logo-magedevel.webp" alt="">
+            <h4>MageDevel</h4>
+            <p>Sviluppatore web e-commerce</p>
+          </div>
         </div>
+
       </section>
     </div>
 
     <!-- Third page -->
-    <div class="page">
+    <div class="page third">
 
       <!-- Decorations -->
       <div class="decorations">
         <div class="line animation"></div>
       </div>
+
+      <section class="content">
+
+        <div>
+          <form method="post" action="php/sendEmail.php">
+            <input type="text" class="animated-border" placeholder="E-mail">
+            <textarea class="animated-border" name="message"></textarea><br>
+            <input type="submit" value="Invia">
+          </form>
+        </div>
+
+        <h2>Scrivimi</h2>
+      </section>
     </div>
 
   </body>
