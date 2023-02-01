@@ -72,3 +72,14 @@ function animate() {
 
 
 }
+
+function getAnimationKeyFrame() {
+  let s = "";
+  for (let i = 0; i < 101; i++) {
+    s += `  ${i}%\n`;
+    s += `    background: linear-gradient($black, $black) padding-box, radial-gradient(at 45% 55%, $purple ${100 - i}%, transparent) border-box\n`
+  }
+  console.log(s);
+}
+
+getAnimationKeyFrame();

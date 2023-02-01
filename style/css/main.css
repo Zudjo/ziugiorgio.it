@@ -66,307 +66,307 @@ html, textarea {
 }
 @keyframes line-inf-an {
   0% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 100%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 100%, transparent) border-box;
   }
   1% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 99%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 99%, transparent) border-box;
   }
   2% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 98%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 98%, transparent) border-box;
   }
   3% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 97%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 97%, transparent) border-box;
   }
   4% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 96%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 96%, transparent) border-box;
   }
   5% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 95%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 95%, transparent) border-box;
   }
   6% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 94%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 94%, transparent) border-box;
   }
   7% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 93%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 93%, transparent) border-box;
   }
   8% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 92%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 92%, transparent) border-box;
   }
   9% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 91%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 91%, transparent) border-box;
   }
   10% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 90%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 90%, transparent) border-box;
   }
   11% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 89%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 89%, transparent) border-box;
   }
   12% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 88%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 88%, transparent) border-box;
   }
   13% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 87%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 87%, transparent) border-box;
   }
   14% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 86%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 86%, transparent) border-box;
   }
   15% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 85%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 85%, transparent) border-box;
   }
   16% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 84%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 84%, transparent) border-box;
   }
   17% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 83%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 83%, transparent) border-box;
   }
   18% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 82%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 82%, transparent) border-box;
   }
   19% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 81%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 81%, transparent) border-box;
   }
   20% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 80%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 80%, transparent) border-box;
   }
   21% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 79%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 79%, transparent) border-box;
   }
   22% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 78%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 78%, transparent) border-box;
   }
   23% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 77%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 77%, transparent) border-box;
   }
   24% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 76%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 76%, transparent) border-box;
   }
   25% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 75%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 75%, transparent) border-box;
   }
   26% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 74%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 74%, transparent) border-box;
   }
   27% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 73%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 73%, transparent) border-box;
   }
   28% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 72%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 72%, transparent) border-box;
   }
   29% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 71%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 71%, transparent) border-box;
   }
   30% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 70%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 70%, transparent) border-box;
   }
   31% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 69%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 69%, transparent) border-box;
   }
   32% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 68%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 68%, transparent) border-box;
   }
   33% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 67%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 67%, transparent) border-box;
   }
   34% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 66%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 66%, transparent) border-box;
   }
   35% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 65%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 65%, transparent) border-box;
   }
   36% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 64%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 64%, transparent) border-box;
   }
   37% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 63%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 63%, transparent) border-box;
   }
   38% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 62%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 62%, transparent) border-box;
   }
   39% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 61%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 61%, transparent) border-box;
   }
   40% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 60%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 60%, transparent) border-box;
   }
   41% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 59%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 59%, transparent) border-box;
   }
   42% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 58%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 58%, transparent) border-box;
   }
   43% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 57%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 57%, transparent) border-box;
   }
   44% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 56%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 56%, transparent) border-box;
   }
   45% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 55%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 55%, transparent) border-box;
   }
   46% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 54%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 54%, transparent) border-box;
   }
   47% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 53%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 53%, transparent) border-box;
   }
   48% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 52%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 52%, transparent) border-box;
   }
   49% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 51%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 51%, transparent) border-box;
   }
   50% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 50%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 50%, transparent) border-box;
   }
   51% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 49%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 49%, transparent) border-box;
   }
   52% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 48%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 48%, transparent) border-box;
   }
   53% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 47%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 47%, transparent) border-box;
   }
   54% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 46%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 46%, transparent) border-box;
   }
   55% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 45%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 45%, transparent) border-box;
   }
   56% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 44%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 44%, transparent) border-box;
   }
   57% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 43%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 43%, transparent) border-box;
   }
   58% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 42%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 42%, transparent) border-box;
   }
   59% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 41%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 41%, transparent) border-box;
   }
   60% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 40%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 40%, transparent) border-box;
   }
   61% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 39%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 39%, transparent) border-box;
   }
   62% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 38%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 38%, transparent) border-box;
   }
   63% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 37%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 37%, transparent) border-box;
   }
   64% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 36%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 36%, transparent) border-box;
   }
   65% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 35%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 35%, transparent) border-box;
   }
   66% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 34%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 34%, transparent) border-box;
   }
   67% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 33%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 33%, transparent) border-box;
   }
   68% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 32%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 32%, transparent) border-box;
   }
   69% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 31%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 31%, transparent) border-box;
   }
   70% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 30%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 30%, transparent) border-box;
   }
   71% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 29%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 29%, transparent) border-box;
   }
   72% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 28%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 28%, transparent) border-box;
   }
   73% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 27%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 27%, transparent) border-box;
   }
   74% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 26%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 26%, transparent) border-box;
   }
   75% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 25%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 25%, transparent) border-box;
   }
   76% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 24%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 24%, transparent) border-box;
   }
   77% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 23%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 23%, transparent) border-box;
   }
   78% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 22%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 22%, transparent) border-box;
   }
   79% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 21%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 21%, transparent) border-box;
   }
   80% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 20%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 20%, transparent) border-box;
   }
   81% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 19%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 19%, transparent) border-box;
   }
   82% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 18%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 18%, transparent) border-box;
   }
   83% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 17%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 17%, transparent) border-box;
   }
   84% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 16%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 16%, transparent) border-box;
   }
   85% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 15%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 15%, transparent) border-box;
   }
   86% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 14%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 14%, transparent) border-box;
   }
   87% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 13%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 13%, transparent) border-box;
   }
   88% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 12%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 12%, transparent) border-box;
   }
   89% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 11%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 11%, transparent) border-box;
   }
   90% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 10%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 10%, transparent) border-box;
   }
   91% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 9%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 9%, transparent) border-box;
   }
   92% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 8%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 8%, transparent) border-box;
   }
   93% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 7%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 7%, transparent) border-box;
   }
   94% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 6%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 6%, transparent) border-box;
   }
   95% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 5%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 5%, transparent) border-box;
   }
   96% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 4%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 4%, transparent) border-box;
   }
   97% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 3%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 3%, transparent) border-box;
   }
   98% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 2%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 2%, transparent) border-box;
   }
   99% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 1%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 1%, transparent) border-box;
   }
   100% {
-    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 0%, #101010) border-box;
+    background: linear-gradient(#101010, #101010) padding-box, radial-gradient(at 45% 55%, #c300ff 0%, transparent) border-box;
   }
 }
 * {
@@ -375,8 +375,8 @@ html, textarea {
 }
 
 html {
-  background-color: #101010;
   color: #f1f7ed;
+  background-color: #101010;
 }
 
 div.page {
@@ -387,17 +387,30 @@ div.page {
 div.page img {
   height: 20rem;
 }
-div.page:nth-child(3) {
+div.page:nth-child(5) {
   text-align: center;
 }
-div.page:nth-child(3) h2 {
+div.page:nth-child(5) h2 {
   padding: 2rem;
 }
-div.page:nth-child(4) {
+div.page:nth-child(6) {
   text-align: right;
 }
-div.page:nth-child(4) .decorations {
+div.page:nth-child(6) .decorations {
   transform: scale(1, -1);
+}
+
+.background {
+  width: 100%;
+  height: 300%;
+  z-index: -99;
+  position: absolute;
+  background-color: transparent;
+  background-image: radial-gradient(#f1f7ed 0rem, #101010 0.1rem);
+  background-size: 1rem 1rem;
+  opacity: 3%;
+  top: 0;
+  left: 0;
 }
 
 .content {
@@ -425,7 +438,7 @@ div.page:nth-child(4) .decorations {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .second .content h2 {
   line-height: 2.5rem;
@@ -448,7 +461,7 @@ div.page:nth-child(4) .decorations {
 .second .content .path-line .path-point {
   width: 1rem;
   height: 1rem;
-  margin: 0 calc(12.5% - 1rem);
+  margin: 0 calc(16.6666666667% - 1rem);
   border-radius: 50%;
   background-color: #f1f7ed;
 }
@@ -470,8 +483,8 @@ div.page:nth-child(4) .decorations {
 }
 .second .content .path .path-time-line {
   border-bottom: solid 0.1rem transparent;
-  width: calc(75% - 3rem);
-  margin: 0 calc(12.5% + 1.5rem);
+  width: calc(66.6666666667% - 3rem);
+  margin: 0 calc(16.6666666667% + 1.5rem);
   position: absolute;
   height: 1.5rem;
   z-index: -100;
@@ -487,15 +500,15 @@ div.page:nth-child(4) .decorations {
 }
 .second .content .path .path-time-line div:nth-child(1) {
   position: absolute;
-  right: calc(-2 * (12.5% - 1.5rem + 1.5rem));
-  width: calc((12.5% - 1.5rem) * 2);
+  right: calc(-2 * (16.6666666667% - 1.5rem + 1.5rem));
+  width: calc((16.6666666667% - 1.5rem) * 2);
   bottom: 0;
   border-bottom: dashed 1px #f1f7ed;
   box-shadow: 3rem 0 3rem inset #f1f7ed;
 }
 .second .content .path > div.experience {
   text-align: center;
-  width: 25%;
+  width: 33.3333333333%;
 }
 .second .content .path > div.experience:not(:first-of-type):not(:last-of-type) {
   padding: 0 1rem;
@@ -508,13 +521,10 @@ div.page:nth-child(4) .decorations {
 .second .content .path > div.experience h4 {
   padding: 1rem 0;
 }
-.second .content .path > div.experience p {
-  padding-top: 1rem;
-}
 @media screen and (max-width: 481px) {
   .second .content .path > div.experience {
     width: 100%;
-    height: calc((100% - 4rem) / 4);
+    height: calc((100% - 4rem) / 3);
     background-color: #101010;
     box-shadow: 0 0 1rem 1rem #101010;
     display: flex;
@@ -546,7 +556,7 @@ div.page:nth-child(4) .decorations {
 
 .animated-border {
   border: transparent;
-  background: linear-gradient(#101010, #101010) padding-box, radial-gradient(#c300ff 100%, #101010) border-box;
+  background-size: 5rem 5rem;
   animation-name: line-inf-an;
   animation-duration: 3s;
   animation-delay: 3s;
@@ -566,7 +576,7 @@ div.page:nth-child(4) .decorations {
 .decorations .line {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
   box-sizing: border-box;
   z-index: -101;
   top: 0;
@@ -581,7 +591,7 @@ div.page:nth-child(4) .decorations {
 .decorations .line.animation {
   position: relative;
   border: transparent;
-  background: linear-gradient(#101010, #101010) padding-box, radial-gradient(#c300ff 100%, #101010) border-box;
+  background-size: 1rem 1rem;
   z-index: -100;
   animation-name: line-an, line-inf-an;
   animation-duration: 3s, 3s;
@@ -613,8 +623,22 @@ header {
   position: relative;
   border: solid 0.1rem transparent;
   border-radius: 0.5rem;
+}
+.third .content div:first-child {
+  margin: 2rem;
   width: 50%;
   height: 50%;
+}
+.third .content div:last-child {
+  width: 15rem;
+  padding: 2rem;
+}
+.third .content div h2 {
+  padding-top: 0;
+}
+.third .content div form {
+  width: 100%;
+  height: 100%;
 }
 .third .content div form input[type=text] {
   width: calc(100% - 2rem);
@@ -641,16 +665,14 @@ header {
   outline: none;
 }
 .third .content div form textarea {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0.5rem;
+  width: calc(100% - 5.1rem);
+  height: calc(100% - 4.25rem);
+  margin-top: 3.25rem;
+  margin-bottom: 1rem;
+  margin-left: 1.1rem;
+  margin-right: 4rem;
   background-color: #101010;
   color: #f1f7ed;
-  padding-top: 4rem;
-  padding-right: 4rem;
-  padding-left: 1rem;
   caret-color: #c300ff;
   resize: none;
   border: none;
@@ -681,7 +703,6 @@ header {
   height: 100%;
   width: 4rem;
   position: fixed;
-  left: 0;
   display: flex;
   flex-direction: column;
   z-index: 10;
@@ -698,8 +719,10 @@ header {
   margin: 1rem 0;
 }
 .menu span button {
-  width: fit-content;
-  background-color: transparent;
+  height: 1.25rem;
+  width: 1.25rem;
+  background-color: #101010;
+  border-radius: 100%;
   border-width: 0;
   color: #f1f7ed;
   filter: opacity(50%);
@@ -708,6 +731,15 @@ header {
 .menu span button:hover {
   cursor: pointer;
   filter: opacity(100%);
+}
+.menu span button img {
+  height: inherit;
+}
+.menu.left {
+  left: 0;
+}
+.menu.right {
+  right: 0;
 }
 
 * {
