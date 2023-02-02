@@ -15,3 +15,7 @@ i miei valori
 form di contatto
 
 frameworks, linguaggi, software
+
+---
+
+nell'email non ci va l'email ma il nome se no non invia

@@ -34,7 +34,7 @@ div.page
   background-color: transparent
   background-image: radial-gradient($white 0rem, $black .1rem)
   background-size: 1rem 1rem
-  opacity: 3%
+  opacity: 10%
   top: 0
   left: 0
 
@@ -48,7 +48,7 @@ div.page
 
   & .content
     display: flex
-    flex-wrap: wrap
+    flex-wrap: nowrap
     align-items: center
     align-content: center
     justify-content: space-evenly
@@ -56,8 +56,20 @@ div.page
     animation-duration: 3s
     animation-timing-function: ease
 
+    @media screen and (max-width: 768px)
+      flex-wrap: wrap
+
     & #about
-      height: 8rem
+      width: 30%
+      height: auto
+      max-width: 21.53rem
+      width: 100%
+      padding: 1rem
+
+    & header
+      width: fit-content
+      min-width: fit-content
+      padding: 1rem
 
 
 
@@ -74,6 +86,7 @@ div.page
     & h2
       line-height: 2.5rem
       font-weight: 200
+      min-width: max-content
 
     & .path-line
       width: 100%
@@ -255,14 +268,6 @@ div.page
     border-left-style: solid
     border-width: .1rem
 
-header
-  padding: 2rem
-
-#about
-  width: 21.97rem
-  line-height: 1rem
-  padding: 2rem
-
 .animation
   animation: fade 1s
 
@@ -274,9 +279,9 @@ header
       border-radius: .5rem
 
       &:first-child
-        margin: 2rem
+        padding: 2rem
         width: 50%
-        height: 50%
+        height: 25%
 
       &:last-child
         width: 15rem
@@ -350,8 +355,8 @@ header
 
 .menu
   height: 100%
-  width: 4rem
-  position: fixed
+  width: max-content
+  position: absolute
   display: flex
   flex-direction: column
   z-index: 10
@@ -361,22 +366,24 @@ header
   animation-name: menu-an
   animation-delay: 3s
   animation-duration: 1s
+  margin: 1.5rem 8vw
 
   & span
     background-color: $black
     box-shadow: 0 0 1rem .5rem $black
     margin: 1rem 0
 
-    & button
-      $side: 1.25rem
+    & button, a
+      $side: 1.5rem
       height: $side
       width: $side
       background-color: $black
       border-radius: 100%
       border-width: 0
       color: $white
-      filter: opacity(50%)
+      filter: opacity(25%)
       transition-duration: 1s
+      font-size: 100%
 
       &:hover
         cursor: pointer
@@ -388,5 +395,12 @@ header
   &.left
     left: 0
 
+    & button, a
+      filter: opacity(25%)
+
+
   &.right
     right: 0
+
+    & button, a
+      filter: opacity(50%)

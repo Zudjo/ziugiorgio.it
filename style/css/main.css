@@ -408,7 +408,7 @@ div.page:nth-child(6) .decorations {
   background-color: transparent;
   background-image: radial-gradient(#f1f7ed 0rem, #101010 0.1rem);
   background-size: 1rem 1rem;
-  opacity: 3%;
+  opacity: 10%;
   top: 0;
   left: 0;
 }
@@ -421,7 +421,7 @@ div.page:nth-child(6) .decorations {
 
 .first .content, .third .content {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   align-content: center;
   justify-content: space-evenly;
@@ -429,8 +429,22 @@ div.page:nth-child(6) .decorations {
   animation-duration: 3s;
   animation-timing-function: ease;
 }
+@media screen and (max-width: 768px) {
+  .first .content, .third .content {
+    flex-wrap: wrap;
+  }
+}
 .first .content #about, .third .content #about {
-  height: 8rem;
+  width: 30%;
+  height: auto;
+  max-width: 21.53rem;
+  width: 100%;
+  padding: 1rem;
+}
+.first .content header, .third .content header {
+  width: fit-content;
+  min-width: fit-content;
+  padding: 1rem;
 }
 
 .second .content {
@@ -443,6 +457,7 @@ div.page:nth-child(6) .decorations {
 .second .content h2 {
   line-height: 2.5rem;
   font-weight: 200;
+  min-width: max-content;
 }
 .second .content .path-line {
   width: 100%;
@@ -605,16 +620,6 @@ div.page:nth-child(6) .decorations {
   border-width: 0.1rem;
 }
 
-header {
-  padding: 2rem;
-}
-
-#about {
-  width: 21.97rem;
-  line-height: 1rem;
-  padding: 2rem;
-}
-
 .animation {
   animation: fade 1s;
 }
@@ -625,9 +630,9 @@ header {
   border-radius: 0.5rem;
 }
 .third .content div:first-child {
-  margin: 2rem;
+  padding: 2rem;
   width: 50%;
-  height: 50%;
+  height: 25%;
 }
 .third .content div:last-child {
   width: 15rem;
@@ -701,8 +706,8 @@ header {
 
 .menu {
   height: 100%;
-  width: 4rem;
-  position: fixed;
+  width: max-content;
+  position: absolute;
   display: flex;
   flex-direction: column;
   z-index: 10;
@@ -712,40 +717,48 @@ header {
   animation-name: menu-an;
   animation-delay: 3s;
   animation-duration: 1s;
+  margin: 1.5rem 8vw;
 }
 .menu span {
   background-color: #101010;
   box-shadow: 0 0 1rem 0.5rem #101010;
   margin: 1rem 0;
 }
-.menu span button {
-  height: 1.25rem;
-  width: 1.25rem;
+.menu span button, .menu span a {
+  height: 1.5rem;
+  width: 1.5rem;
   background-color: #101010;
   border-radius: 100%;
   border-width: 0;
   color: #f1f7ed;
-  filter: opacity(50%);
+  filter: opacity(25%);
   transition-duration: 1s;
+  font-size: 100%;
 }
-.menu span button:hover {
+.menu span button:hover, .menu span a:hover {
   cursor: pointer;
   filter: opacity(100%);
 }
-.menu span button img {
+.menu span button img, .menu span a img {
   height: inherit;
 }
 .menu.left {
   left: 0;
 }
+.menu.left button, .menu.left a {
+  filter: opacity(25%);
+}
 .menu.right {
   right: 0;
 }
+.menu.right button, .menu.right a {
+  filter: opacity(50%);
+}
 
 * {
-  font-size: clamp(2px, 1vh + 1vw, 25px);
+  font-size: clamp(3px, 1.1vh + 1.1vw, 25px);
   font-weight: 200;
-  line-height: 1rem;
+  line-height: 1.1rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -776,11 +789,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.33rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 a {

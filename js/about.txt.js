@@ -1,8 +1,8 @@
 export const aboutEN = `
 <p>
-  Born in the twothousand in Italy, I like developing and designing websites.
+  I was born in the twothousand in Italy, I like developing and designing websites.
   Attention to detail and intuitive designs are my obsession,
-  curiosity and perseverance my values.
+  curiosity and perseverance my guides.
 </p>
 <br>
 <p>
@@ -12,9 +12,9 @@ export const aboutEN = `
 
 export const aboutIT = `
 <p>
-  Nato nel duemila in Italia, mi piace sviluppare e disegnare siti web.
+  Sono nato nel duemila in Italia, mi piace sviluppare e disegnare siti web.
   La cura per i dettagli ed i design intuitivi sono la mia fissa,
-  la curiosità e la perseveranza i miei valori.
+  la curiosità e la perseveranza le mie guide.
 </p>
 <br>
 <p>

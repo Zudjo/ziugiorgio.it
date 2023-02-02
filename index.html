@@ -36,8 +36,8 @@
     <div class="background"></div>
 
     <div class="menu right">
-      <span><button id="cv">CV</button></span>
-      <span><button id="cv"><img src=".\media\images\logo-github.webp"></button></span>
+      <span><a href=".\CV_ZiuGiorgio.pdf" download>CV</a></span>
+      <span><a href="https://github.com/Zudjo" target="_blank"><img src=".\media\images\logo-github.webp"></a></span>
     </div>
 
     <div class="menu left">
@@ -81,26 +81,26 @@
     <div class="page second">
 
       <section class="content">
-        <h2>Il mio percorso</h2>
+        <h2 id="title2">Il mio percorso</h2>
 
         <div class="path">
           <section class="path-time-line animated-border"></section>
           <div class="experience">
             <img src=".\media\images\logo-giorgi-ufficio.webp" alt="">
             <h4>Giorgi Ufficio</h4>
-            <p>Stage scolastico come tenico informatico</p>
+            <p id="exp1">Stage scolastico come tenico informatico</p>
           </div>
 
           <div class="experience">
             <img src=".\media\images\logo-itis.webp" alt="">
             <h4>ITIS Enrico Mattei</h4>
-            <p>Diploma di perito informatico</p>
+            <p id="exp2">Diploma di perito informatico</p>
           </div>
 
           <div class="experience">
             <img src=".\media\images\logo-websolute.webp" alt="">
             <h4>Websolute</h4>
-            <p>Sviluppatore web di mantenimento</p>
+            <p id="exp3">Sviluppatore di mantenimento</p>
           </div>
         </div>
 
@@ -118,14 +118,14 @@
       <section class="content">
 
         <div class="animated-border">
-          <form method="post" action="php/sendEmail.php">
-            <input type="text" class="animated-border" placeholder="Your e-mail">
-            <textarea name="message"></textarea><br>
+          <form method="post" action="php/sendEmail.php" id="textArea">
+            <input type="text" class="animated-border" placeholder="La tua e-mail" name="sender">
+            <textarea name="message" required></textarea><br>
             <input type="submit" class="animated-border" value="Invia">
           </form>
         </div>
 
-        <div>
+        <div id="writeMe">
           <h2>Scrivimi</h2>
           <p>
             Se vuoi offrirmi un lavoro, giudicare il mio sito o semplicemente dirmi ciao, questo è il posto per farlo.
