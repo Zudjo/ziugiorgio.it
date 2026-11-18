@@ -1,0 +1,34 @@
+---
+import "@fontsource/cal-sans";
+import "@fontsource-variable/inter";
+import "@fontsource-variable/fira-code";
+import "../styles/tokens.css";
+---
+
+<html lang="it">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Giorgio Ziu</title>
+	</head>
+	<body>
+		<h1 class="ziu-name">Giorgio Ziu</h1>
+	</body>
+</html>
+
+<style is:global>
+	body {
+		margin: 0;
+		background: var(--bg);
+		color: var(--fg);
+		font-family: var(--font-text);
+	}
+	.ziu-name {
+		font-family: var(--font-display);
+		font-weight: var(--display-weight);
+		letter-spacing: var(--display-tracking);
+		font-size: var(--fs-lg);
+		margin: 0;
+		padding: 16px;
+	}
+</style>

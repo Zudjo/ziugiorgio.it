@@ -1,0 +1,50 @@
+/* Colori in OKLCH, regola 60-30-10: --bg 60%, --fg 30%, --accent 10%. Testo: WCAG AAA, almeno 7:1 */
+:root {
+  --black: oklch(0.145 0 0);
+  --white: oklch(0.985 0 0);
+  --accent: oklch(0.598 0.221 277.4); /* #6666ff */
+  --accent-strong: oklch(from var(--accent) 0.46 c h);
+  --accent-soft: oklch(from var(--accent) 0.71 0.152 h);
+  --bg: var(--white);
+  --fg: var(--black);
+  --accent-ink: var(--accent-strong);
+}
+:root[data-theme="dark"] {
+  --bg: var(--black);
+  --fg: var(--white);
+  --accent-ink: var(--accent-soft);
+}
+
+/* Type scale in px, valori di Giorgio del 19/11 */
+@supports (font-size: clamp(1rem, 1vi, 1rem)) {
+  :root {
+    --fs-sm: clamp(10px, -0.11vi + 10.33px, 8px);
+    --fs-base: clamp(20px, 0.22vi + 19.33px, 24px);
+    --fs-md: clamp(40px, 1.78vi + 34.67px, 72px);
+    --fs-lg: clamp(80px, 7.56vi + 57.33px, 216px);
+  }
+}
+@supports not (font-size: clamp(1rem, 1vi, 1rem)) {
+  :root {
+    --fs-sm: 10px;
+    --fs-base: 20px;
+    --fs-md: 40px;
+    --fs-lg: 80px;
+  }
+  @media screen and (min-width: 2100px) {
+    :root {
+      --fs-sm: 8px;
+      --fs-base: 24px;
+      --fs-md: 72px;
+      --fs-lg: 216px;
+    }
+  }
+}
+
+:root {
+  --font-display: "Cal Sans", system-ui, sans-serif;
+  --font-text: "Inter Variable", system-ui, sans-serif;
+  --font-mono: "Fira Code Variable", ui-monospace, monospace;
+  --display-weight: 400;
+  --display-tracking: -0.02em;
+}
